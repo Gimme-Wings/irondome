@@ -7,7 +7,7 @@ int main (void)
  meow(4);
 }
 
-void meow(int n)
+void meow(int n)// present argument here
 {
 for (int i =0; i<n; i++)
 {
