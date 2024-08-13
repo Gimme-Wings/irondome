@@ -16,6 +16,6 @@ int main(void)
         printf("x is greater than y");
     }
     else
-    {printf("equal");
+    {printf("equals\n");
     }
 }
