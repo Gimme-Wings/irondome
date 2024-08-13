@@ -4,7 +4,7 @@ int main (void)
 {int n;
 do
 {
-    n= get_int("size:")
+    n= get_int("size:");
 }   //  int n = get_int("size: ");
  while (n<1);
     // while (n<1)
