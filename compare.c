@@ -6,16 +6,17 @@ int main(void)
     char x =get_char("yes or no?");
 
 
-    if(x=='y' )
+    if(x =='y' )
     {
         printf("Yes\n");
 
     }
-    else if (x== 'n')
+    else if (x == 'n')
     {
         printf("no\n");
     }
-    else('x')
-    {printf("not agree\n");
+    else if (x =='c')
+    {
+        printf("not agree\n");
     }
 }
