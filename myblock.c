@@ -1,15 +1,14 @@
 #include <stdio.h>
-
-int main (void)
-
-{{void meow (void)
-    printf("meow\n");
+void meow (void)
+ {   printf("meow\n");
 
 }
+int main (void)
+
+{
 for (int i =0;< 3; i++)
 {
     meow();
 }
-
-
 }
+
