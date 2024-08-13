@@ -1,14 +1,15 @@
+#include <cs50.h>
 #include <stdio.h>
 int main (void)
 {
+    const int n = get_int("size: ");
+    for (int i =0; i < n ; i++)
     {
-    for (int i =0; i<3; i++)
-    {
-        for (int j = 0; j<3;j++)
+        for (int j = 0; j < n ;j++)
         {
             printf("#");
     }
 printf("\n");
 }
 }
-}
+
