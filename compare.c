@@ -6,12 +6,12 @@ int main(void)
     char x =get_char("yes or no?");
 
 
-    if(x =='y' || 'Y' )
+    if(x =='y' || x=='Y' )
     {
         printf("Yes\n");
 
     }
-    else if (x == 'n' || 'N')
+    else if (x == 'n' || x=='N')
     {
         printf("no\n");
     }
