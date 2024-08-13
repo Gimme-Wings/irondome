@@ -5,10 +5,10 @@ int main (void)
 {
 int i = get_int("what is i equal to?\n");
 for (int i; i > 2; i--)
-printf("meow\n");
+{printf("meow\n");
 
 
 
 
-
+}
 }
