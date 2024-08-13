@@ -6,7 +6,7 @@ int main(void)
     char x =get_char("yes or no?");
 
 
-    if(x =='y' && x=='Y' )
+    if(x =='y' || x=='Y' )
     {
         printf("Yes\n");
 
