@@ -4,7 +4,7 @@ int main (void)
 
 {
 int i = get_int("what is i equal to?\n");
-for (i > 2; i--)
+for (int i; i > 2; i--)
 printf("meow\n");
 
 
