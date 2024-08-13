@@ -4,7 +4,7 @@ int main (void)
 
 {
 
-for (int i=4; i > 2; i--)
+for (int i=10; i>3; i--)
 {printf("meow\n");
 
 
