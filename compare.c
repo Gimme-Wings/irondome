@@ -3,19 +3,19 @@
 
 int main(void)
 {
-    int x = get_int("whats x? ");
-    int y = get_int("whats y? ");
+    char x =get_char("yes or no?");
 
-    if(x<y)
+
+    if(x=='y' )
     {
-        printf("x is less than y\n");
+        printf("Yes\n");
 
     }
-    else if (x>y)
+    else if (x== 'n')
     {
-        printf("x is greater than y\n");
+        printf("no\n");
     }
     else
-    {printf("equals\n");
+    {printf("not agree\n");
     }
 }
