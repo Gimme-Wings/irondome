@@ -15,7 +15,7 @@ int main(void)
     {
         printf("no\n");
     }
-    else
+    else('x')
     {printf("not agree\n");
     }
 }
