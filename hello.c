@@ -4,7 +4,12 @@
 
 int main (void)
 
+ get_int(x=1, y=2);
+if(x<y)
 {
-  string answer = get_string("What's your name? ");
-  printf(" hello, %s\n", answer);
+printf("x is less than y\n");
+}
+else
+{
+    printf("x is not less than y\n");
 }
