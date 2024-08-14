@@ -4,8 +4,8 @@
 int main (void)
 {
 int x=4;
-char z =(x-i)
+
 for (int i = 0 ;i < 4; i++)
-{
+{char z =(x-i);
     printf("%c\n",z);
 } }
