@@ -5,8 +5,8 @@ int main (void)
 
 {
 int x = get_int("height:");
-int z = get_int("length"-x);
-
+int z = get_int("length");
+int y = x-z;
 while (z>0)
 {
 printf("#");
