@@ -3,12 +3,15 @@
 
 int main (void)
 {
-int h= get_int("what height? ");
+
 
 for (int l= get_int("what length? ");l>0;l--)
+{
+    for (int h= get_int("what height? ");h>0;h--)
 {
     printf("#");
 }
 
+}
 
 }
