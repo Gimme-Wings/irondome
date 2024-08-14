@@ -5,8 +5,8 @@ int main (void)
 
 
 {int h = get_int("height:");
-
-for (int l = h; l < 1; l++)
+int l = h;
+for (int i = 0; i < l; i++)
 {
     printf("#");
 }
