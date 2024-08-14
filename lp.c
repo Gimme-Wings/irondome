@@ -6,9 +6,12 @@ int main (void)
 int h = get_int("what is the height?");
 print_row(4);
 }
-void print_row()
+ void print_row(int length)//function of print has an input of length that takes int as a input and it returns nothing because of void just performs the print
 {
-
+for (int i=o; i<length;i++)
+{
+    printf("#");
+}
 
 
 }
