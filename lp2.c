@@ -3,9 +3,9 @@
 
 int main (void)
 
-{
+
 int h = get_int("height:");
 const int l = h;
-
-printf();
-
+while (l>0)
+{printf(#);
+}
