@@ -7,5 +7,5 @@ int main (void)
     string name = get_string ("what is your name?\n");
     int age = get_int ("what is your age\n");
     string phone = get_string ("what is your phone number?\n");
-printf("Your info is %s, %i, %s\n", name, age, phone);
+printf("name: %s,\nage: %i,\nphone: %s.\n", name, age, phone);
 }
