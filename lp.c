@@ -4,10 +4,10 @@
 int main (void)
 {
 int x = 4;
-int y = 4-%i,x;
-while (x>0)
+int y = 4-x;
+while (y>0)
 {
     printf("#");
     x--;
-}
+}printf("\n");
 }
