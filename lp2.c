@@ -5,7 +5,7 @@ int main (void)
 
 {
 int x = get_int("height:");
-int z = 4-x;
+int z = get_int("length"-x);
 
 while (z>0)
 {
