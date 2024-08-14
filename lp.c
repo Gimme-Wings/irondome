@@ -3,11 +3,10 @@
 
 int main (void)
 {
-int x = 4;
-int y = 4-x;
-while (y>0)
-{
-    printf("#");
-    x++;
-}printf("\n");
+int h= get_int("what height? ");
+int l= get_int("what length? ");
+
+
+
+
 }
