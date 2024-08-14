@@ -4,11 +4,9 @@ void z (void);
 int main (void)
 
 {
-int x=4;
-
-
 for (int i = 4 ;i > 0; i--)
-    z();
+    for ( int x=0 ; x<4; x++)
+z();
 }
 void z (void)
 {{
