@@ -10,7 +10,7 @@ int z = 4-x;
 while (z>0)
 {
 printf("#");
-}x++;
-
+x++;
+}
 
 }
