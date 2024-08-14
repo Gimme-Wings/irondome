@@ -10,5 +10,6 @@ while (l>0)
 {
     printf("#");
     l--;
+    printf("\n");
 }
 }
