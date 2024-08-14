@@ -8,6 +8,6 @@ int y = 4-x;
 while (y>0)
 {
     printf("#");
-    x--;
+    x++;
 }printf("\n");
 }
