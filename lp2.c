@@ -5,11 +5,9 @@ int main (void)
 
 
 {int h = get_int("height:");
-int l = h;
-while (l>0)
+
+for (int l = h; l < 1; l++)
 {
     printf("#");
-    l--;
-    printf("\n");
 }
 }
