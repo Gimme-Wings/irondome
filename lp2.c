@@ -6,8 +6,11 @@ int main (void)
 {
 int x = get_int("height:");
 int z = 4-x;
-printf("%i",z);
 
+while (z>0)
+{
+printf("#");
+}x++;
 
 
 }
