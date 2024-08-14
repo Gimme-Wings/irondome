@@ -2,8 +2,10 @@
 #include <stdio.h>
 
 int main (void)
-
-for (int i=0;i<4;i++)
 {
-    printf("4-int i");
+int x=4;
+for (int i = 0 ;i < 4; i++)
+{
+    printf("%i-%i",x,i);
+}
 }
