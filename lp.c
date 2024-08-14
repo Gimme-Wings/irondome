@@ -4,9 +4,11 @@
 int main (void)
 {
 int h= get_int("what height? ");
-int l= get_int("what length? ");
 
-
+for (int l= get_int("what length? ");l>0;l--)
+{
+    printf("#");
+}
 
 
 }
