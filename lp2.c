@@ -7,7 +7,11 @@ int main (void)
 {int h = get_int("height:");
 int l = h;
 for (int i = 0; i < l; i++)
-{for( h ; i<h; i++)
-    printf("#");
+{
+    for (int j = 0; j <= i; j++)
+    {
+        printf("#");
+    }
+    printf("\n");
 }
 }
