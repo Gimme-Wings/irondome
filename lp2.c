@@ -4,18 +4,18 @@
 int main (void)
 
 {
-int x = get_int("height:");
-int z = x;
-while (x>0)
-{
-    printf("#");
-    x--;
-}
-printf("\n");
-while (z>0)
+int h = get_int("height:");
+int l = h;
+while (h>0)
+while (l>0)
 {
 printf("#");
-z--;
+h--;
+}
+    printf("#");
+    l--;
 }
 
-}
+
+
+
