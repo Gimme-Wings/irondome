@@ -3,4 +3,4 @@
 
 int main (void)
 
-for (int i=4, )
+for (int i=0)
