@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-
+void print_row(int length);
 int main (void)
 {
 int h = get_int("what is the height?");
