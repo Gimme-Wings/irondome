@@ -2,7 +2,7 @@
 #include <cs50.h>
 int height, column,i;
 int main (void)
-{{
+{{{
 do
 {
     height = get_int("height?\n");
@@ -11,14 +11,16 @@ do
 {
 for (i=0; i<height;i++)
 {
-    printf("@");
-}
-for (column=0;height-column-1;column--)
+    for (column=0;height-column-1;column++)
 {
     printf("#");
-}
+ }{ printf("@");
+ }
+ }
+
 {
     printf("\n");
+}
 }
 }
 }
