@@ -9,7 +9,7 @@ do
 } while (height>8 || height <1);
 }
 {
-for (i=0; i;height;i++)
+for (i=0; i<height;i++)
 {
     printf("_");
 }
