@@ -13,14 +13,9 @@ for (i=0; i<height;i++)
 {
     for (column=0;height-column-1;column++)
 {
-    printf("#");
- }{ printf("@");
+    printf("@");
  }
+ { printf("#");
+ } printf ("\n");
  }
-
-{
-    printf("\n");
-}
-}
-}
-}
+}}}
