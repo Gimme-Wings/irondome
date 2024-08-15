@@ -11,7 +11,13 @@ do
 {
 for (i=0; i<height;i++)
 {
-    printf("_");
+    printf("@");
+}for (column=0;column-height;column++)
+{
+    printf("#");
+}
+{
+    printf("\n");
 }
 }
 }
