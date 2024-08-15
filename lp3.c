@@ -11,10 +11,10 @@ for (int i = 0; i < l; i++)
     for (int j = 0; j <= i; j++)
     {
         for (int k=0; k>j; j--)
-{
-     printf("#");
+{  printf("  ");
+
     }
-        printf("  ");
+        ;printf("#");
     }
     printf("\n");
 }
