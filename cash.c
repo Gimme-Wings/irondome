@@ -13,15 +13,15 @@ while (change>0)
 {change= change-25;
 coins++;
 }
-else
+ if (change>0)
 {
-    change= change-10;
+ change= change-10;
     coins++;
 }
-else
+if (change>0)
 {change= change-5;
 coins++;}
-else
+if (change>0)
  {change= change-1;
 coins++;}
 
