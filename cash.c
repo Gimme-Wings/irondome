@@ -9,7 +9,7 @@ change = get_int("how much change?");
 } while(change<0);
 while (change>0)
 {
-    if(change>0)
+    if(change>=25)
 {change= change-25;
 coins++;
 }
@@ -21,7 +21,12 @@ while(change>0 && change<25)
         coins++;
     }
 }
+while(change>0 && change<10)
 
+{
+    change=change-5;
+    coins++;
+}
 
 }printf("%i",coins);
 }
