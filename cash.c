@@ -13,8 +13,14 @@ while (change>0)
 {change= change-25;
 coins++;
 }
-    if 
-
+while(change>0 && change<25)
+{
+    if (change >0)
+    {
+        change= change-10;
+        coins++;
+    }
+}
 
 
 }printf("%i",coins);
