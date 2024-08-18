@@ -13,7 +13,7 @@ do
 for (i=0; i<height;i++)
 {for (space=0;space<height-i-1;space++)
 {
-    printf("@");
+    printf(" ");
 }
 for (hash=0;hash<i+1;hash++)
 {
