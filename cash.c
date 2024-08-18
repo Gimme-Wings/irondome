@@ -19,12 +19,12 @@ coins++;
         coins++;
     }
 
-else if(change>=5)
-{
-    change=change-5;
-    coins++;
+        else if(change >= 5)
+            {
+     change = change - 5;
+     coins++;
 }
-if (change>0)
+             else if (change>0)
 {
     change=change-1;
     coins++;
