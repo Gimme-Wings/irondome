@@ -13,7 +13,17 @@ while (change>0)
 {change= change-25;
 coins++;
 }
-
+else
+{
+    change= change-10;
+    coins++;
+}
+else
+{change= change-5;
+coins++;}
+else
+ {change= change-1;
+coins++;}
 
 
 }printf("%i",coins);
