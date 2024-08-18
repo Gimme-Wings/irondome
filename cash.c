@@ -13,11 +13,7 @@ while (change>0)
 {change= change-25;
 coins++;
 }
-if(change>0)
-{
-    change= change-10;
-    coins++;
-}
+    if 
 
 
 
