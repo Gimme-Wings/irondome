@@ -14,7 +14,7 @@ for (i=0; i<height;i++)
 {
     printf("@");
 }
-for (hash=0;;hash++)
+for (hash=0;hash<i+1;hash++)
 {
     printf("#");
 }printf("\n");
