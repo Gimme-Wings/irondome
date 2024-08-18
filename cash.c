@@ -30,5 +30,5 @@ coins++;
     coins++;
 }
 
-}printf("%i",coins);
+}printf("Change: %i, Coins: %i\n", change, coins);
 }
