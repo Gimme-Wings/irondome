@@ -23,8 +23,15 @@ while(change>0 && change<25)
 }
 while(change>0 && change<10)
 
+if(change>0)
 {
     change=change-5;
+    coins++;
+}
+while(change>0 && change<5)
+if (change>0)
+{
+    change=change-1;
     coins++;
 }
 
