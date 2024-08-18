@@ -10,7 +10,7 @@ do
 }
 
 for (i=0; i<height;i++)
-{for (space=0;space<height-1;space++)
+{for (space=0;space<height-i-1;space++)
 {
     printf("@");
 }
