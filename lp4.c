@@ -1,21 +1,25 @@
 #include <stdio.h>
 #include <cs50.h>
-int height, column,i;
+int height, hash,i,space;
 int main (void)
-{{{
+{{
 do
 {
     height = get_int("height?\n");
 } while (height>8 || height <1);
 }
-{
+
 for (i=0; i<height;i++)
-{ printf("@");
-    for (column=0;column<=i;column++)
+{for (space=0;space<height;space++)
 {
- 
- }
- { printf("#");
- } printf ("\n");
- }
-}}}
+    printf("@");
+}
+for (hash=0;hash<height-2;hash++)
+{
+    printf("#");
+}printf("\n");
+
+}
+
+
+}
