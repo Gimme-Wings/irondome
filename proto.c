@@ -1,18 +1,19 @@
 #include <cs50.h>
 #include <stdio.h>
-void print_column( height)
-int i, h, height;
+void print_column( int height );
+
 int main (void)
 
 {
-    h =get_int("height:");
-    print_column (h)
+    int h =get_int("height:");
+    print_column (h);
 }
 
-void print_column( height )
+void print_column( int height )
 {
- for ( i = 0; i < height; i++)
+ for ( int i = 0; i < height; i++)
 {
     printf("#\n");
 }
 }
+
