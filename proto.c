@@ -6,10 +6,10 @@ int main (void)
 
 {
     int h =get_int("height:");
-    qwert (h);// the print_column here is just a name for the prototype thats about to come up by executing the print column it just enters the bottom loop
+    qwert (h); // the print_column is a name for prototype thats coming up executing the print column enters below
 }
 
-void qwert( int height )
+void print_column( int height )
 {
  for ( int i = 0; i < height; i++)
 {
