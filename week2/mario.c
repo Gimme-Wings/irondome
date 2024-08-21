@@ -4,6 +4,6 @@
 
 int main (int argc, string argv [])
 {
-    int height =atoi(argv[1]) //to store a number that will be input at the command line as an int, the stdlib.h has to be included and use atoi to change it; from a string to an int;
+    int height =atoi(argv[1]); //to store a number that will be input at the command line;
 }
-//the stdlib.h has to be included and use atoi to change it; from a string to an int;
+// as an int, the stdlib.h has to be included and use atoi to change it; from a string to an int;
