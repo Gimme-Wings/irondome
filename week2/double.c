@@ -6,12 +6,13 @@ int main (void)
 {
     int sequence [5];
     sequence [0]=1;
-    for (int i = 1; i < 5; i++)
+return("%i\n", sequence [0]);
+    for ( int i=1; i < 5; i++)
 
     {
         sequence[i]= sequence [i-1]*2;
-        printf("%i\n", sequence [i]);
-    }
+
+    }printf("%i\n", sequence [i]);
 
 
 }
