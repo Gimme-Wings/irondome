@@ -3,14 +3,17 @@
 float mult (float a, float b);
 
 int main (void)
-{{float c=0;
-    float a = get_float("a: \n");
+{{ float a = get_float("a: \n");
+
 float b = get_float("b: \n");
-mult(a,b);
+
+float c= a*b;
+
+mult(c);
 printf("%f\n", c);
 }
 float mult (float a, float b);
 {
- float c=  return a*b;
+ c=  return a*b;
 }
 }
