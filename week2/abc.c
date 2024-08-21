@@ -11,7 +11,7 @@ for (int i = 0; i < length; i++)
     printf("not\n");
 }
 else
-{
+{printf("yes\n");
     i++;
 }
 } printf("\n");
