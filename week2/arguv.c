@@ -4,6 +4,6 @@ int main (int argc, string argv[])
 {
 for (int i = 0; i < argc; i++)
 {
-    printf("%s ", argv[i]);
+    printf("hello, %s ", argv[i]);
 } printf("\n");
 }
