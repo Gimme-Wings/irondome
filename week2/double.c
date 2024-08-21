@@ -3,8 +3,8 @@
 
 int main (void)
 
-{
-    int sequence [5];
+{int size =5;
+    int sequence [size];
     sequence [0]=1;
 return("%i\n", sequence [0]);
     for ( int i=1; i < 5; i++)
