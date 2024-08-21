@@ -5,9 +5,9 @@ int main (void)
 {float a = get_float("a: \n");
 float b = get_float("b: \n");
 mult(a,b);
-printf("%f\n",mult);
+printf("%f\n", mult);
 }
 float mult (float a, float b);
 {
-    mult (a,b);
+    return a*b;
 }
