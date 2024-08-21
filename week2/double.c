@@ -9,8 +9,9 @@ int main (void)
     for (int i = 1; i < 5; i++)
 
     {
-        sequence[i]= sequence[i-1]*2;
+        sequence[i]= sequence [i-1]*2;
+        printf("%i\n", sequence [i]);
     }
 
-   printf("%i\n", sequence[i]);
+
 }
