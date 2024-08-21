@@ -3,7 +3,7 @@
 int main (int argc, string argv[])
 {
 for (int i = 0; i < argc; i++)
-{;
-    printf("%s ", argv[b]);
+{
+    printf("%s ", argv[i]);
 } printf("\n");
 }
