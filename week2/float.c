@@ -6,10 +6,9 @@ int main (void)
 {{ float a = get_float("a: \n");
 float b = get_float("b: \n");
 multiply(a,b);
-printf("%f\n", c);
+printf("%f\n", multiply);
 }
 float multiply (float a, float b);
-{float c= a*b;
- c=  return a*b;
-}
+{
+    return x*y;
 }
