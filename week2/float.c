@@ -6,14 +6,11 @@ int main (void)
 {{ float a = get_float("a: \n");
 
 float b = get_float("b: \n");
-
-float c= a*b;
-
 mult(c);
 printf("%f\n", c);
 }
 float mult (float a, float b);
-{
+{float c= a*b;
  c=  return a*b;
 }
 }
