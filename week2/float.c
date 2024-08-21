@@ -5,7 +5,7 @@ float multiply (float a, float b);
 int main (void)
 {{ float a = get_float("a: \n");
 float b = get_float("b: \n");
-mult(c);
+multiply(a,b);
 printf("%f\n", c);
 }
 float multiply (float a, float b);
