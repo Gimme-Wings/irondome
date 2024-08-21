@@ -4,10 +4,10 @@
 int main (void)
 {
     string phrase= get_string ("enter phrase: ");
-
-for (int i = 0, int length = strlen (phrase); i < length; i++)
+int length = strlen (phrase);
+for (int i = 0; i < length; i++)
 {
-printf("%c\n",phrase [i]);
-}
+printf("%c",phrase [i]);
+} printf("\n");
 }
 
