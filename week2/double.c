@@ -6,8 +6,8 @@ int main (void)
 {int size =5;
     int sequence [size];
     sequence [0]=1;
-return("%i\n", sequence [0]);
-    for ( int i=1; i < 5; i++)
+printf("%i\n", sequence [0]);
+    for ( int i =1; i < 5; i++)
 
     {
         sequence[i]= sequence [i-1]*2;
