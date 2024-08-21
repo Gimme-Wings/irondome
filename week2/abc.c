@@ -8,8 +8,8 @@ int length = strlen (phrase);
 for (int i = 0; i < length; i++)
 {
     if (phrase[i]<phrase[i+1])
-    {
-        
+    {return phrase [i];
+i++
     }
 printf("%i ",phrase [i]);
 } printf("\n");
