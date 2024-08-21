@@ -5,9 +5,11 @@ int main (void)
 
 {
     int sequence [5];
-    for (int i = 0; i < 4; i++)
+    sequence [0]=1;
+    for (int i = 1; i < 5; i++)
+
     {
-        sequence[i]= sequence[i]*2;
+        sequence[i]= sequence[i-1]*2;
     }
 
    printf("%i\n", sequence[i]);
