@@ -12,10 +12,7 @@ int main(void)
             printf("not\n");
             return 0;
         }
-        else
-        {
-            printf("alphabetical\n");
-        }
-    }
+
+    }printf("alphabteical\n");
     printf("\n");
 }
