@@ -9,11 +9,9 @@ for (int i = 0; i < length; i++)
 {if (phrase[i]>phrase[i+1])
 {
     printf("not\n");
+    return 0;
 }
-else
-{printf("yes\n");
-    i++;
-}
+
 } printf("\n");
 }
 
