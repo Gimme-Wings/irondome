@@ -6,12 +6,7 @@ int main (void)
     string phrase= get_string ("enter phrase: ");
 int length = strlen (phrase);
 for (int i = 0; i < length; i++)
-{while    (phrase[i]<phrase[i+1])
-   
-    {return phrase [i];
-
-    }i++;
-
+{
 printf("%i ",phrase [i]);
 
 } printf("\n");
