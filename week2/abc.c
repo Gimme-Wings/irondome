@@ -8,9 +8,12 @@ int length = strlen (phrase);
 for (int i = 0; i < length; i++)
 {if (phrase[i]>phrase[i+1])
 {
-    
+    printf("not\n");
 }
-
+else
+{
+    i++;
+}
 } printf("\n");
 }
 
