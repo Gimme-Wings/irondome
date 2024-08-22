@@ -21,13 +21,14 @@ else
 {
     printf("false\n");
 }
+return 0;
+    }
 
 
-{
     bool tri (int a, int b, int c)
 { return (a+b>c) && (a+c>b) && (b+c>a);
 
 value=0
 }
-}
+
 
