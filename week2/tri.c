@@ -21,7 +21,7 @@ else
 }
 
 {char tri (int a, int b, int c)
-{if ()
+{int sum = sum a+b;
 
 }
 }
