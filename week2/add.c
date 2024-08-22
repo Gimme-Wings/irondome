@@ -10,7 +10,7 @@ int main (void)
 
     int result= add_two (a,b);
 
-    printf("a*b=%i\n", result);
+    printf("a+b=%i\n", result);
 
 }
 
