@@ -2,12 +2,13 @@
 #include <stdio.h>
 
 int main (void)
-{{
+{int a,b,c;
+    {
 do
-{int a = get_int("a:");
-int b = get_int ("b:");
-int c = get_int ("c:");
-    } while (int a < 0 || int  b < 0 || int c <0)
+{ a = get_int("a:");
+ b = get_int ("b:");
+ c = get_int ("c:");
+    } while ( a < 0 ||  b < 0 || c <0);
 }
 
 }
