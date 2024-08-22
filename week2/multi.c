@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 // Function prototype
-float multiply(float a, float b);
+float multiply(int a, int b);
 
 int main(void)
 {
@@ -18,7 +18,7 @@ int main(void)
 }
 
 // Function definition
-float multiply(float a, float b)
+int multiply(int a, int b)
 {
     return a * b;
 }
