@@ -15,7 +15,6 @@ int main (void)
 }
 
 int add_two(int a, int b)
-{int sum;
-sum = a+b;
+{int sum = a+b;
     return sum;
 }
