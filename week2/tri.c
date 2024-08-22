@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int tri (int a, int b, int c);
+bool tri (int a, int b, int c);
 int main (void)
 {
     {int a,b,c, value=0;
@@ -23,11 +23,9 @@ else
 }
 
 {
-    int tri (int a, int b, int c)
+    bool tri (int a, int b, int c)
 {
-    int sumab = sum a+b;
-int sumbc = sum b+c;
-int sumca = sum a+c;
+    
 value=0
 }
 }
