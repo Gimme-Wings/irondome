@@ -2,13 +2,13 @@
 #include <stdio.h>
 
 // Function prototype
-float multiply(int a, int b);
+float multiply(float a, float b);
 
 int main(void)
 {
     // Get input from the user
-    int a = get_float("a: ");
-    int b = get_float("b: ");
+    float a = get_float("a: ");
+    float b = get_float("b: ");
 
     // Call the multiply function and store the result
     float result = multiply(a, b);
@@ -18,7 +18,7 @@ int main(void)
 }
 
 // Function definition
-float multiply(int a, int b)
+float multiply(float a, float b)
 {
     return a * b;
 }
