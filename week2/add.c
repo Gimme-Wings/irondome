@@ -8,9 +8,9 @@ int main (void)
     int a = get_int("a: ");
     int b = get_int("b: ");
 
-    int result= add_two (a,b);
+   float  result= add_two (a,b);
 
-    printf("a+b=%i\n", result);
+    printf("a+b=%.2f\n", result);
 
 }
 
