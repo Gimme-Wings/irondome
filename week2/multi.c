@@ -7,8 +7,8 @@ float multiply(int a, int b);
 int main(void)
 {
     // Get input from the user
-    float a = get_float("a: ");
-    float b = get_float("b: ");
+    int a = get_float("a: ");
+    int b = get_float("b: ");
 
     // Call the multiply function and store the result
     float result = multiply(a, b);
@@ -18,7 +18,7 @@ int main(void)
 }
 
 // Function definition
-int multiply(int a, int b)
+float multiply(int a, int b)
 {
     return a * b;
 }
