@@ -13,7 +13,7 @@ do
 
     } while ( a <= 0 ||  b <= 0 || c <=0);
 
-if (value==0)
+if (tri(a,b,c))
 {
     printf("true\n");
 }
@@ -28,7 +28,7 @@ return 0;
     bool tri (int a, int b, int c)
 { return (a+b>c) && (a+c>b) && (b+c>a);
 
-value=0
+
 }
 
 
