@@ -27,8 +27,7 @@ return 0;
 
     bool tri (int a, int b, int c)
 { return (a+b>c) && (a+c>b) && (b+c>a);
-
-
+printf("%c\n", return);
 }
 
 
