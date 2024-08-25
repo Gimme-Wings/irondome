@@ -6,13 +6,17 @@ int add(string word);
 int main (void)
 {//get a and b strings
 string words[2];
-words[0] = get_string ("Player 1: ");
-words[1] = get_string ("Player 2: ");
-for (int i = 0, n = strlen(words); i < n; i++)
+string a = get_string ("Player 1: ");
+string b = get_string ("Player 2: ");
+for (int i = 0, n = strlen(a); i < n; i++)
     {
-       (toupper(words[i]));
+       (toupper(a[i]));
     }
-    printf("\n");
+for (int i = 0, n = strlen(b); i < n; i++)
+    {
+       (toupper(b[i]));
+    }
+
 int sum1 = add(words[0]);
 int sum2 = add(words[1]);
 
