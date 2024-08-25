@@ -6,7 +6,7 @@ int main (void)
 string words[2];
 words[0] = get_string ("Player 1: ");
 words[1] = get_string ("Player 2: ");
-add(int[0],int[1]);
+add([0],[1]);
 
 if (sum1>sum2)
 {
