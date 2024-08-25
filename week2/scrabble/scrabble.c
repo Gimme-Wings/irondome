@@ -1,14 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
-int add (string words[0]);
-int add (string words[1]);
+int add(string word);
 int main (void)
 {//get a and b strings
 string words[2];
 words[0] = get_string ("Player 1: ");
 words[1] = get_string ("Player 2: ");
-int sum1 = add(string words[0]);
-int sum2 = add(string words[1]);
+int sum1 = add(words[0]);
+int sum2 = add(words[1]);
 
 if (sum1>sum2)
 {
@@ -42,3 +41,4 @@ int add (string words [1])
     }
     return sum2;
 }
+
