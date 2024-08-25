@@ -1,6 +1,6 @@
 #include <cs50.h>
 #include <stdio.h>
-int add (words[0], words[1]);
+int add (int[0], int[1]);
 int main (void)
 {//get a and b strings
 string words[2];
@@ -24,7 +24,7 @@ else
 
 {
 
-int add (words[0],words[1])
+int add (int[0],int[1])
 {int sum1 = 0;
     for (int i = 0; i < length; i++)
     {
