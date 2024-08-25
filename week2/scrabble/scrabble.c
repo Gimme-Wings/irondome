@@ -16,7 +16,8 @@ for (int i = 0, n = strlen(b); i < n; i++)
     {
      b = (toupper(b[i]));
     }
-
+words[0]=a;
+words[1]=b;
 int sum1 = add(words[0]);
 int sum2 = add(words[1]);
 
