@@ -10,11 +10,11 @@ string a = get_string ("Player 1: ");
 string b = get_string ("Player 2: ");
 for (int i = 0, n = strlen(a); i < n; i++)
     {
-     a ==  (toupper(a[i]));
+     a = (toupper(a[i]));
     }
 for (int i = 0, n = strlen(b); i < n; i++)
     {
-     b ==  (toupper(b[i]));
+     b = (toupper(b[i]));
     }
 
 int sum1 = add(words[0]);
