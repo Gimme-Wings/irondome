@@ -3,7 +3,7 @@
 
 int main (void)
 {//get a and b strings
-int a = get_int ("Player 1: ");
-int b = get_int ("Player 2: ");
-
+string a = get_string ("Player 1: ");
+string b = get_string ("Player 2: ");
+printf("%i%i\n", a,a)
 }
