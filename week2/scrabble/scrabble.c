@@ -13,7 +13,7 @@ if (sum1>sum2)
 {
     printf("player 1 wins\n");
 }
-else if(sum2> sum1)}
+else if(sum2> sum1)
 {
     printf("player 2 wins\n");
 }
@@ -23,22 +23,11 @@ else
 }
 
 
-{
 
-int add (string words[0])
-{int sum1 = 0;
-    for (int i = 0; i < length; i++)
-    {
-        sum1 += words1[i];
+int add(string word){
+    int sum = 0;
+    for (int i = 0; word[i] != '\0'; i++) {
+        sum += word[i];
     }
-    return sum1;
+    return sum;
 }
-int add (string words [1])
-{int sum2 = 0;
-    for (int k = 0; k < length; k++)
-    {
-        sum2 += words2[i];
-    }
-    return sum2;
-}
-
