@@ -1,12 +1,12 @@
 #include <cs50.h>
 #include <stdio.h>
-int add ()
+int add (words[0], words[1]);
 int main (void)
 {//get a and b strings
 string words[2];
 words[0] = get_string ("Player 1: ");
 words[1] = get_string ("Player 2: ");
-
+add([0],[1]);
 
 if (sum1>sum2)
 {
@@ -23,7 +23,9 @@ else
 
 
 {
-int sum1 = 0;
+
+int add (words[0],words[1])
+{int sum1 = 0;
     for (int i = 0; i < length; i++)
     {
         sum1 += words1[i];
