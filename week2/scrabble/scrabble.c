@@ -24,7 +24,7 @@ else
 
 }
 
-{
+
 int add(string word){
     int sum = 0;
     for (int i = 0; word[i] != '\0'; i++) {
@@ -32,4 +32,4 @@ int add(string word){
     }
     return sum;
 }
-}
+
