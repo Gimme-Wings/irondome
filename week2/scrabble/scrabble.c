@@ -16,8 +16,6 @@ string b = get_string ("Player 2: ");
     b[k] = toupper(b[k]);
 }
 
-words[0]=a;
-words[1]=b;
 int sum1 = add(words[0]);
 int sum2 = add(words[1]);
 
