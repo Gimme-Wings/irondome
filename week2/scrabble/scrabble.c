@@ -6,6 +6,7 @@ int main (void)
 string words[2];
 words[0] = get_string ("Player 1: ");
 words[1] = get_string ("Player 2: ");
+
 int sum1 = add(words[0]);
 int sum2 = add(words[1]);
 
