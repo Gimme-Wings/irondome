@@ -8,6 +8,7 @@ int main (void)
 string words[2];
 string a = get_string ("Player 1: ");
 string b = get_string ("Player 2: ");
+
     for (int m = 0, n = strlen(a); m < n; m++) {
     a[m] = toupper(a[m]);
     }
