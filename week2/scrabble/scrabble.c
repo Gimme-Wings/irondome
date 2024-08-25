@@ -22,12 +22,14 @@ else
     printf("tie\n");
 }
 
+}
 
-
+{
 int add(string word){
     int sum = 0;
     for (int i = 0; word[i] != '\0'; i++) {
         sum += word[i];
     }
     return sum;
+}
 }
