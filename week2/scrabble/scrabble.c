@@ -8,14 +8,13 @@ int main (void)
 string words[2];
 string a = get_string ("Player 1: ");
 string b = get_string ("Player 2: ");
-for (int i = 0, n = strlen(a); i < n; i++)
-    {
-     a = (toupper(a[i]));
+    for (int m = 0, n = strlen(a); m < n; m++) {
+    a[m] = toupper(a[m]);
     }
-for (int i = 0, n = strlen(b); i < n; i++)
-    {
-     b = (toupper(b[i]));
-    }
+    for (int k = 0, l = strlen(b); k < l; k++) {
+    b[k] = toupper(b[k]);
+}
+
 words[0]=a;
 words[1]=b;
 int sum1 = add(words[0]);
