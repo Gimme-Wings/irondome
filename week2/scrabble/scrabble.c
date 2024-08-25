@@ -12,7 +12,7 @@ if (sum1>sum2)
 {
     printf("player 1 wins\n");
 }
-if else (sum2> sum1)}
+else if(sum2> sum1)}
 {
     printf("player 2 wins\n");
 }
