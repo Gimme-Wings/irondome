@@ -1,13 +1,13 @@
 #include <cs50.h>
 #include <stdio.h>
-#include <string.h>
+#include <ctype.h>
 int add(string word);
 int main (void)
 {//get a and b strings
 string words[2];
 words[0] = get_string ("Player 1: ");
 words[1] = get_string ("Player 2: ");
-
+return 
 int sum1 = add(words[0]);
 int sum2 = add(words[1]);
 
