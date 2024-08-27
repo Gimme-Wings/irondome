@@ -3,4 +3,5 @@ name = input("whats your name? ")
 
 
 #say hello to user
-print("HELLO, " + name)
+print("HELLO, ", end="")
+print(name)
