@@ -1,6 +1,6 @@
-x=float(input("whats x? "))#or int 
+x=float(input("whats x? "))#or int
 y=float(input("whats y? "))
 
 #z = int (x) + int (y)
 
-print(x+y)
+print(round(x+y))
