@@ -9,7 +9,7 @@ char a = get_char("do they wear a white shirt? (y/n)");
 
 
 
-if(a==y)
+if(a=y)
 {
     printf("maybe they are still normal");
 }
@@ -20,7 +20,7 @@ else
 }
 char b = get_char("is it CT?");
 
-if (b==y)
+if (b=y)
 {
     printf("closer to special");
 }
@@ -30,7 +30,7 @@ else
     return 0;
 }
 char c = get_char("do they make weird noises?")
-if (c==y)
+if (c=y)
 {
     printf("probably a brisker");
 }
