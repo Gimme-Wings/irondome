@@ -6,6 +6,7 @@ name = name.strip()
 #capitalize only first word
 #name = name.capitalize()
 
+#capitalize every word
 name = name.title()
 
 #say hello
