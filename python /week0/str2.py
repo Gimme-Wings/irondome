@@ -1,5 +1,4 @@
-name = input ("whats your name? ")
+#.lstrip() removbes from left rstrip removes from right
+name = input ("whats your name? ").strip().title()
 
-name = name.strip().title()
-
-print(f"hello,{name}")
+print(f"hello, {name}")
