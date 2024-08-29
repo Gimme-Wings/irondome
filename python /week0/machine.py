@@ -6,7 +6,7 @@ def main():
     global emoticon
     say("is anyone there? ")
     emoticon = ":D"#python doesnt want to change a global variable
-    say("hello")
+    say("oh, hi")
 
 def say(phrase):
     print(phrase+ " " + emoticon)
