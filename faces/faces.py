@@ -1,9 +1,11 @@
 def convert():
     if ":)" in emoji:
-    print("🙂")
+        print("🙂")
     if ":(" in emoji:
-    print("🙁")
+     print("🙁")
 
 def main ():
     emoji = input("input: ")
     convert()
+
+main()
