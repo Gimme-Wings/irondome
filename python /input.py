@@ -1,7 +1,9 @@
 def greet (input):
     if "hello" in input:
-        print("hello, there")
+        return ("hello, there")#or print it
     else:
-        print("IDK")
+        return ("IDK")
+#store is storing the value return through greet/input it can be accesed later
+store = greet("hello") #this is the input thats referenced above
 
-greet("hello, comp")#this is the input thats referenced above 
+print("store)
