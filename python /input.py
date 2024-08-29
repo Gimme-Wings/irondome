@@ -4,7 +4,7 @@ def greet (input):
     else:
         return ("IDK")
 
-ask = input ("if you want to start, type hello")
+ask =  ("if you want to start, type hello")
 #store is storing the value return through greet/input it can be accesed later
 store = greet(ask) #this is the input thats referenced above
 if store == ('whats going on '):
