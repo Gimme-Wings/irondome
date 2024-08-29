@@ -1,0 +1,2 @@
+fast = input("type something: ")
+
