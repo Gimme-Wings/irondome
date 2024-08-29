@@ -1,8 +1,3 @@
-def greet (input):
-    if "Hello" or "hello" in input:
-        return ("Whats going on, ")#or print it
-    else:
-        return 0
 
 def main():
     ask =  input("if you want to start, type hello: ")
@@ -13,6 +8,13 @@ def main():
         name= name.title()
 #can use stored value to add to it
     print("Hey, " + store + name + "?")
+
+def greet (input):
+    if "Hello" or "hello" in input:
+        return ("Whats going on, ")#or print it
+    else:
+        return 0
+
 
 
 main()
