@@ -4,3 +4,6 @@ def hello(name):#()  is saying taking no input whatever is inside is a parameter
 name = input("whats your name? ")
 hello(name)
 
+
+
+
