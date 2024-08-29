@@ -4,39 +4,39 @@
 int main (void)
 
 {
-    printf("type y or n to indicate answer");
-char a = get_char("do they wear a white shirt? (y/n)");
+    printf("type y or n to indicate answer\n");
+char a = get_char("do they wear a white shirt? (y/n)\n");
 
 
 
-if(a=y)
+if(a=='y')
 {
-    printf("maybe they are still normal");
+    printf("maybe they are still normal\n");
 }
 else
 {
-    printf("going OTD");
+    printf("going OTD\n");
     return 0;
 }
-char b = get_char("is it CT?");
+char b = get_char("is it CT?\n");
 
-if (b=y)
+if (b=='y')
 {
-    printf("closer to special");
+    printf("closer to special\n");
 }
 else
 {
-    printf("probably just regular yeshivish");
+    printf("probably just regular yeshivish\n");
     return 0;
 }
-char c = get_char("do they make weird noises?")
-if (c=y)
+char c = get_char("do they make weird noises?\n");
+if (c=='y')
 {
-    printf("probably a brisker");
+    printf("probably a brisker\n");
 }
 else
 {
-    printf("A CHOFETZ CHAIMER");
+    printf("A CHOFETZ CHAIMER\n");
     return 0;
 }
 
