@@ -1,5 +1,9 @@
-def guess():
+def get_guess():
     guess=input("guess: ")
     return guess
 
-print(guess())
+def main():
+    guess= get_guess()
+    print(guess)
+
+main()
