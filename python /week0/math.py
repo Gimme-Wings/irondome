@@ -3,4 +3,4 @@ y=float(input("whats y? "))
 
 z= round(x/y,2)
 
-print(z)
+print(z) # or print(f"{z:.2f}")
