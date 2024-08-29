@@ -1,14 +1,15 @@
 def greet (input):
     if "hello" in input:
-        return ("Whats going on ")#or print it
+        return ("Whats going on, ")#or print it
     else:
         return ("IDK")
 
-ask =  ("if you want to start, type hello")
+def beg()
+ask =  input("if you want to start, type hello: ")
 #store is storing the value return through greet/input it can be accesed later
 store = greet(ask) #this is the input thats referenced above
-if store == ('whats going on '):
+if store == ('Whats going on, '):
     name = input("whats your name? ")
     name= name.title()
 #can use stored value to add to it
-print("hey " + store + name)
+print("Hey, " + store + name)
