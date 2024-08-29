@@ -1,3 +1,3 @@
 fast = input("type something: ")
-fast= fast.str.replace(" ","...")
+fast= fast.replace(" ","...")
 print(fast)
