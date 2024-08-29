@@ -3,7 +3,7 @@ def main():
     hello (name)
 
 def hello (to="world"):
-    print("hello, ", to)
+    print("hello,", to)
 
 main()
-hello()
+
