@@ -1,4 +1,4 @@
-def convert():
+def convert(emoji):
     if ":)" in emoji:
         print("🙂")
     if ":(" in emoji:
@@ -6,6 +6,6 @@ def convert():
 
 def main ():
     emoji = input("input: ")
-    convert()
+    convert(emoji)
 
 main()
