@@ -1,6 +1,7 @@
 def calc():
-    mass = input("m: ")
-    e = mass*90000000000000000
+    mass = int(input("m: "))
+    c=90000000000000000
+    e = mass*c
     print("E: "+ e)
     return 0
 
