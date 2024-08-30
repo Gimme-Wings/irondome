@@ -1,4 +1,6 @@
 def convert(text):
+    if ":)" or ":(" not in text:
+        print(text)
     if ":)" in text:
         text = text.replace(":)","🙂")
         print(text)
@@ -7,8 +9,7 @@ def convert(text):
         text = text.replace(":(","🙁")
         print(text)
         return 0
-    else:
-        print(text)
+
 
 def main ():
     emoji = input("input: ")
