@@ -5,7 +5,7 @@ def convert(text):
         print(text)
     if ":(" in text:
         text.replace(":(","🙁")
-     print(text)
+        print(text)
 
 def main ():
     emoji = input("input: ")
