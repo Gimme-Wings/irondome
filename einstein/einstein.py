@@ -3,4 +3,4 @@ def calc():
     e = mass*300000000
     print("E: "+ e)
 
-calc()
+calc(`)
