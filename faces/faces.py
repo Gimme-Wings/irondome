@@ -1,5 +1,5 @@
 def convert(text):
-    if ":)" or ":(" not in text:
+    if ":)" or ":(" ! in text:
       return text
 
     if ":)" in text:
