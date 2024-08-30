@@ -1,7 +1,8 @@
-def convert(emoji):
-    if ":)" in emoji:
+def convert(text):
+    text
+    if ":)" in text:
         print("🙂")
-    if ":(" in emoji:
+    if ":(" in text:
      print("🙁")
 
 def main ():
