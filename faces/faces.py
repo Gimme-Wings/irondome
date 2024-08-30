@@ -1,10 +1,9 @@
 def convert(text):
-    text
     if ":)" in text:
-        text.replace(":)","🙂")
+        text = text.replace(":)","🙂")
         print(text)
     if ":(" in text:
-        text.replace(":(","🙁")
+        text = text.replace(":(","🙁")
         print(text)
 
 def main ():
