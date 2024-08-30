@@ -16,8 +16,8 @@ def convert(text):
 
 def main ():
     emoji = input("input: ")
-    convert(emoji)
-    print(emoji)
+    new=convert(emoji)
+    print(new)
 
 main()
 
