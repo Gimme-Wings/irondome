@@ -9,8 +9,8 @@ def main():
     else:
       print("odd")
 
-def is_even(q):
-    return True if n % 2 == 0 else False
+def is_even(q): #this below is returning automatically if its tru or false
+    return (q % 2 ==0)#(or this)return True if n % 2 == 0 else False
    #if q % 2 == 0:
     #    return True
    #else:
