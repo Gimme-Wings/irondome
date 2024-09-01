@@ -4,6 +4,10 @@ def main ():
 
     if dif = "dif":
         
+    else:
+
+
+
 def recc (game):
     print("you might like", game)
 
