@@ -3,11 +3,13 @@
 def main():
     x = int(input("which number? "))
 #check if divisible by 2 fold all into z
-    if x%2 ==0:
+    if is_even(x):
 #check if remainder is 0
 
      print("even")
     else:
       print("odd")
+def is_even(q):
+   q%2 == 0
 
 main()
