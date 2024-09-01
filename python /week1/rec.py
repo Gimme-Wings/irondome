@@ -4,7 +4,8 @@ def main():
     if not(difficulty == "Difficult" or difficulty == "Casual"): #not negates the ()
      print("Enter a valid difficulty")
      return
-    players = input("Multiplayer or Single-player? ")
+    players = input("Multiplayer or Single-player? ").title()
+
     if not(players == "Multiplayer" or players == "Single-player"):
         print("Enter a valid number of players")
         return
