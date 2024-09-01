@@ -1,11 +1,11 @@
 def main():
     difficulty = input("Difficult or Casual? ")
     difficulty = difficulty.title()
-    if not(difficulty == "Difficult" or difficulty == "casual"): #not negates the ()
+    if not(difficulty == "Difficult" or difficulty == "Casual"): #not negates the ()
      print("Enter a valid difficulty")
      return
     players = input("Multiplayer or Single-player? ")
-    if not(players == "Multiplayer" or players == "single-player"):
+    if not(players == "Multiplayer" or players == "Single-player"):
         print("Enter a valid number of players")
         return
 
