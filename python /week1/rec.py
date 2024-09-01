@@ -1,5 +1,6 @@
 def main():
     difficulty = input("Difficult or Casual? ")
+    difficulty = difficulty.toupper()
     if not(difficulty == "Difficult" or difficulty == "casual"): #not negates the ()
      print("Enter a valid difficulty")
      return
