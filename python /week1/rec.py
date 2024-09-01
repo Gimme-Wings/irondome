@@ -1,7 +1,12 @@
 def main():
     difficulty = input("Difficult or Casual? ")
-    if difficulty == "Difficult" or == "casual"
+    if not(difficulty == "Difficult" or == "casual") #not negates the ()
+     print("Enter a valid difficulty")
+     return
     players = input("Multiplayer or Single-player? ")
+    if not(players == "Multiplayer" or == "single-player")
+        print("Enter a valid number of players")
+        return
 
     if difficulty == "Difficult":
         if players == "Multiplayer":
@@ -17,8 +22,7 @@ def main():
             recommend("Clock")
         else:
             print("Enter a valid number of players")
-    else:
-        print("Enter a valid difficulty")
+
 
 
 def recommend(game):
