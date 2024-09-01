@@ -1,4 +1,5 @@
-score = float(input("score: "))
+#elif is mutually exclusive
+core = float(input("score: "))
 if 90 <= score <=100:
     print("Grade A")
 elif score >=80:
