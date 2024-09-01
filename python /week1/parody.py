@@ -5,11 +5,13 @@ def main():
 #check if divisible by 2 fold all into z
     if is_even(x):
 #check if remainder is 0
-
      print("even")
     else:
       print("odd")
+      
 def is_even(q):
-   q%2 == 0
-
+   if q % 2 == 0:
+        return True
+   else:
+        return False
 main()
