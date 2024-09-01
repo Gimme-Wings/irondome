@@ -8,8 +8,7 @@ def main():
         print("Enter a valid number of players")
         return
 
-    if difficulty == "Difficult":
-        if players == "Multiplayer":
+    if difficulty == "Difficult" and players == "Multiplayer":
             recommend("Poker")
         elif players == "Single-player":
             recommend("Klondike")
