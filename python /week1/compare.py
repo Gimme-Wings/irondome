@@ -6,7 +6,7 @@ if x < y:# only execute indented line if above is true
     print("x is less than y")
 elif x > y:
     print("x is greater than y")
-else:
+elif x == y:
     print("x is equal to y")
 
 
