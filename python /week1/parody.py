@@ -8,10 +8,11 @@ def main():
      print("even")
     else:
       print("odd")
-      
+
 def is_even(q):
-   if q % 2 == 0:
-        return True
-   else:
-        return False
+    return True if n % 2 == 0 else False
+   #if q % 2 == 0:
+    #    return True
+   #else:
+    #    return False
 main()
