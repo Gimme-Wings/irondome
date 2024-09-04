@@ -2,12 +2,19 @@ numbers = input("Expression: ")
 
 
 x = float(numbers[0])
-print(x)
 
 y = (numbers[2])
 
 z = float(numbers[4])
 
-if y == "+":
-    add = x+y
-    print(add)
+if "+" in y:
+    print(x + y)
+elif "-" in y:
+    print(x - y)
+elif "*" in y:
+    print(x * y)
+elif "/" in y:
+    if y != 0:
+        print(x / y)
+    else:
+        print("undefined")
