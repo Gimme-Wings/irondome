@@ -1,7 +1,7 @@
 numbers = input("Expression: ")
 
 
-x = float(numbers[0])
+x = float(numbers[0:" "])
 
 y = (numbers[2])
 
