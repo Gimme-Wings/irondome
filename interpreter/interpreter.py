@@ -9,6 +9,5 @@ y = (numbers[2])
 z = float(numbers[4])
 
 if y == "+":
-    print(x + y)
-elif y == "-":
-    print(x - y)
+    add = x+y
+    print(add)
