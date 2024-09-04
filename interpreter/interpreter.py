@@ -4,18 +4,18 @@ numbers = input("Expression: ")
 x = numbers.find(" ")
 w = float(numbers[0:x])
 
-y = (numbers[2])
+y = (numbers[x])
 
 z = float(numbers[4])
 
 if "+" in y:
-    print(x + z)
+    print(w + z)
 elif "-" in y:
-    print(x - z)
+    print(w - z)
 elif "*" in y:
-    print(x * z)
+    print(w * z)
 elif "/" in y:
     if z != 0:
-        print(x / z)
+        print(w / z)
     else:
         print("undefined")
