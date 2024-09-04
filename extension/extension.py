@@ -1,7 +1,7 @@
 def main():
     name  = input("File name? ")
     name = name.lower().lstrip().rstrip()
-    find()
+    find(name)
 
 #.gif
 #.jpg
