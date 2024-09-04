@@ -17,7 +17,7 @@ def find(file):
     else:
         if ".gif" in file:
             print("image/gif")
-        elif ".jpg" or ".jpeg" in file:
+        elif ".jpg" in file or ".jpeg" in file:
             print("image/jpeg")
         elif ".png" in file:
             print("image/png")
