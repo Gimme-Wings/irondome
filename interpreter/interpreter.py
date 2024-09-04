@@ -2,6 +2,7 @@ numbers = input("Expression: ")
 
 
 x = numbers.find(" ")
+w = float(numbers[0:x])
 
 y = (numbers[2])
 
