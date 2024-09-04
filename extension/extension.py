@@ -1,4 +1,4 @@
-def main ():
+def main():
     name  = input("File name? ")
     find()
 #.gif
