@@ -1,6 +1,8 @@
 def main():
     name  = input("File name? ")
+    name = name.lower().lstrip().rstrip()
     find()
+
 #.gif
 #.jpg
 #.jpeg
@@ -8,7 +10,6 @@ def main():
 #.pdf
 #.txt
 #.zip
-    name = name.lower().lstrip().rstrip()
 
 def find(name):
     if "." not in name:
