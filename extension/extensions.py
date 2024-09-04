@@ -12,9 +12,8 @@ def main():
 #.zip
 
 def find(file):
-    if "." not in file:
-        print("application/octet-stream")
-    else:
+
+    if "." in file:
         if ".gif" in file:
             print("image/gif")
         elif ".jpg" in file or ".jpeg" in file:
@@ -27,5 +26,8 @@ def find(file):
             print("text/plain")
         elif ".zip" in file:
             print("application/zip")
-
+        else:
+            print("application/octet-stream")
+    if "." not in file:
+        print("application/octet-stream")
 main()
