@@ -11,21 +11,21 @@ def main():
 #.txt
 #.zip
 
-def find(name):
-    if "." not in name:
+def find(file):
+    if "." not in file:
         print("application/octet-stream")
     else:
-        if ".gif" in name:
+        if ".gif" in file:
             print("image/gif")
-        elif ".jpg" or ".jpeg" in name:
+        elif ".jpg" or ".jpeg" in file:
             print("image/jpeg")
-        elif ".png" in name:
+        elif ".png" in file:
             print("image/png")
-        elif ".pdf" in name:
+        elif ".pdf" in file:
             print("application/pdf")
-        elif ".txt" in name:
+        elif ".txt" in file:
             print("text/plain")
-        elif ".zip" in name:
+        elif ".zip" in file:
             print("application/zip")
 
 main()
