@@ -26,6 +26,6 @@ def find(name):
         elif ".txt" in name:
             print("text/plain")
         elif ".zip" in name:
-            print("application.zip")
+            print("application/zip")
 
 main()
