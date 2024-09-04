@@ -1,9 +1,30 @@
-name  = input("File name? ")
+def main ():
+    name  = input("File name? ")
+    find()
+#.gif
+#.jpg
+#.jpeg
+#.png
+#.pdf
+#.txt
+#.zip
+    name = name.lower().lstrip().rstrip()
 
+def find(name):
+    if "." not in name:
+        print("application/octet-stream")
+    else:
+        if ".gif" in name:
+            print("image/gif")
+        elif ".jpg" or ".jpeg" in name:
+            print("image/jpeg")
+        elif ".png" in name:
+            print("image/png")
+        elif ".pdf" in name:
+            print("application/pdf")
+        elif ".txt" in name:
+            print("text/plain")
+        elif ".zip" in name:
+            print("application.zip")
 
-name = name.lower().lstrip().rstrip()
-
-if "." in name:
-    name.find(".")
-    name = 
-
+main()
