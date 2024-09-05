@@ -7,5 +7,5 @@ students = [
 ]
 
 for i in students:
-    print(i["name"], i["house"], i["patronus"],sep=", ")
+    print(f"The patronus of {i["name"]} is a/an {i["patronus"]}",sep=", ")
 
