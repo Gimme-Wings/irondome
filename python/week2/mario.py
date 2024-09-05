@@ -5,7 +5,8 @@ def main():
         continue
     else:
         return height
-        for _ in range(height):
-            print("#")
+    
+    for _ in range(height):
+        print("#")
 
 main()
