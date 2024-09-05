@@ -7,4 +7,7 @@ students = {
 }
 name = input("what name? ")
 print(students[name])#can use words to index
+# or
 
+for student in students:
+    print(student)
