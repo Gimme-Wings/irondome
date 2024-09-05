@@ -5,7 +5,7 @@ for i in [0, 1, 2]:
 for i in range(3):
     print("cat")
 
-for _ in range(3): # if not using the variable at all just call it _
+for _ in range(10): # if not using the variable at all just call it _
     print("woof")
 
 
