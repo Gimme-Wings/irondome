@@ -4,6 +4,7 @@ def main():
     if height <= 0:
         continue
     else:
-        print("#")
+        for _ in range(height):
+            print("#")
 
 main()
