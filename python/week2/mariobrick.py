@@ -17,5 +17,6 @@ def print_brick(length, height):
         for l in range(length):
             print("#", end='',sep='')
         print("\n")
-    print("\n")
+    
+
 main()
