@@ -13,4 +13,5 @@ def ask_length():
     return length
 
 def print_brick(length, height):
-    for 
+    for _ in range[height]:
+        print("#")
