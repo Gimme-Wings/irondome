@@ -1,4 +1,4 @@
-x = 3
-while x != 0:
+x = 1
+while x <=3:
     print("meow")
-    x = x - 2
+    x = x + 1
