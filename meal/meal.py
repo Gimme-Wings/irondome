@@ -1,13 +1,13 @@
 def main():
     time = input("What time is it? ")
     convert(time)
-
+    print(time)
 
 def convert(time):
     type = time.find(":")
-    hour = time[0:type]
-    minute = time[type+1:]
-    
+    hour = float(time[0:type])
+    minute = float(time[type+1:])
+    time = hour+(minute / 60)
 
 
 if __name__ == "__main__":
