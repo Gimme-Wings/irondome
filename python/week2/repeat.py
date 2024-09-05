@@ -1,11 +1,12 @@
 def main():
     number = get_number()
-    meow(x)
+    meow(number)
 
-def get_number(n):
+def get_number():
     while True:
-         n = int(input("whats n? "))
-         if n > 0:
+        n = int(input("whats n? "))
+        if n > 0:
+            return n
 
 def meow(n):
     for _ in range(n):
