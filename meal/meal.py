@@ -4,7 +4,10 @@ def main():
 
 
 def convert(time):
-    type = time.find("")
+    type = time.find(":")
+    hour = time[0:type]
+    minute = time[type+1:]
+    
 
 
 if __name__ == "__main__":
