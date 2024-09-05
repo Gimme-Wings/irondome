@@ -3,12 +3,12 @@ def main():
     convert(time)
     print(time)
 
-def convert(time):
-    type = time.find(":")
-    hour = float(time[0:type])
-    minute = float(time[type+1:])
-    time = hour+(minute / 60)
-
+def convert(clock):
+    type = clock.find(":")
+    hour = float(clock[0:type])
+    minute = float(clock[type+1:])
+    clock = hour+(minute / 60)
+    return clock
 
 if __name__ == "__main__":
     main()
