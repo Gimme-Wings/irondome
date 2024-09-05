@@ -7,5 +7,5 @@ students = [
 ]
 
 for i in students:
-    print(i["name"], i["house"], i[sep=", ")
+    print(i["name"], i["house"], i["patronus"],sep=", ")
 
