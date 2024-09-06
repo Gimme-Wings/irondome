@@ -18,3 +18,7 @@ print(number**(1/2))#or 0.5
 # in anaconda can do math. to see what functions are in math
 
 print(x/y)
+
+print(x//y)# gives lowest integer so removes the decimal
+
+print(x%y)# remainder 
