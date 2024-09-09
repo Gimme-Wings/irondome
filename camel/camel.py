@@ -3,10 +3,11 @@ name = input("camel case: ")
 print("snake case: ", end = "")
 for c in name:
 
-    if c.islower:
+    if c.islower():
         print(c, end = "")
-    elif c.isupper:
+    elif c.isupper():
         c = c.lower()
-        print("_")
+        print("_", end = "")
         print(c, end = "")
+print()
 
