@@ -9,8 +9,8 @@ while cost > 0:
             continue
         else:
             if (cost-n)<0:
-                continue
-            else:
+                print(f"Change Owed: {n-cost}")
+            if:
                 cost = cost - n
                 print(f"Amount Due: {cost}")
             break
