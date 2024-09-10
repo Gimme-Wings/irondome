@@ -1,5 +1,5 @@
-cost = 50
-cost = int(cost)
+cost = int(50)
+
 
 while cost > 0:
     while True: #induce a forvever loop
