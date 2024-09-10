@@ -13,6 +13,7 @@ while cost > 0:
             if (cost-n)>0:
                 break
             elif (due)<0:
+                change = n-cost
                 print(f"Change Owed: {n-cost}")
 
             #if( cost-n)>0:
