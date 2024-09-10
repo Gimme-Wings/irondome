@@ -9,6 +9,7 @@ while cost > 0:
             continue
         else:
             due = cost - n
+            cost = cost -n
             if (cost-n)>0:
                 break
             elif (due)<0:
