@@ -8,7 +8,7 @@ while cost > 0:
         if (n != 25) and (n!= 10) and (n!=5):
             continue
         else:
-            cost = cost - n
+            due = cost - n
             if (cost-n)>0:
                 break
             elif (cost-n)<0:
