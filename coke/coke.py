@@ -12,9 +12,10 @@ while cost > 0:
             cost = cost -n
             if (cost-n)>0:
                 break
-            elif (due)<0:
+            elif (due)<1:
                 change = n-cost
                 print(f"Change Owed: {-1*due}")
+            
 
             #if( cost-n)>0:
                 #cost = cost - n
