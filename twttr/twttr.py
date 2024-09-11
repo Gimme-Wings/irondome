@@ -1,9 +1,9 @@
 text = input("Input: ")
 
-while True:
-    for i in text:
-        if i == "a":
+for i in len(text):
+    for j in text:
+        if j == "a":
             continue
         else:
-            print(f"output {i}")
+            print(f"output {j}")
         break
