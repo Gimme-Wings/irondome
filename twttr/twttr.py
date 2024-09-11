@@ -1,8 +1,8 @@
 text = input("Input: ")
 
 while True:
-    for _ in text:
-        if (_ = 'a') or (_ = 'i'):
+    for i in text:
+        if (i = 'a'):
             continue
         else:
-            print(f"output{_}")
+            print(f"output{text[_]}")
