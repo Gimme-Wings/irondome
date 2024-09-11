@@ -1,5 +1,5 @@
 text = input("Input: ")
-
+print(len(text))
 for i in len(text):
     for j in text:
         if j == "a":
