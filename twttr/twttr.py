@@ -7,4 +7,4 @@ while length > 0:
             else:
                 print(f"{i}", end ='')
                 length = length - 1
-            break
+            
