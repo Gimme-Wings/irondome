@@ -2,7 +2,8 @@ text = input("Input: ")
 
 while True:
     for i in text:
-        if i in []:
+        if i == "a":
             continue
         else:
-            print(f"output{text[_]}")
+            print(f"output {i}")
+        break
