@@ -1,6 +1,6 @@
 text = input("Input: ")
 
-while i in range(len(text)):
+while True:
     for j in text:
         if j == "a":
             continue
