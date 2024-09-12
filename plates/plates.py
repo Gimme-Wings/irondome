@@ -16,17 +16,21 @@ def is_valid(s):
 def letters(l, length):
     number_list = ("123456890")
     spaces = 1
-    while True:
+
+    flag = False
         #i is the first digit
-        for i in l:
-            for j in number_list:
-                if i == j:
-                    break
-                    
-                else:
+    for i in l:
+        for j in number_list:
+            if i == j:
+                flag = True
+                break
+
+            else:
                     #spaces is where it is in the word
-                    spaces = spaces +1
-        spaces = spaces %10
+                spaces = spaces +1
+        if flag:
+            break
+    spaces = spaces %10
 
 
 
