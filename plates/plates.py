@@ -12,12 +12,12 @@ def is_valid(s):
         return letters(s)
     else:
         return False
-    
+
 
 
 def letters(l):
     number_list = ("123456890")
-    spaces = 2
+    spaces = 12
     flag = False
     # i is the first digit
     for i in l:
@@ -28,9 +28,11 @@ def letters(l):
             else:
                 # spaces is where it is in the word
                 spaces = spaces + 1
+
         if flag:
             break
     spaces = spaces // 10
+    print(spaces)
     if (spaces < 2) or (j == '0'):
         return False
     else:
