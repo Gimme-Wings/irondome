@@ -18,7 +18,7 @@ def letters(l, length):
     while length > 0:
         for numb in l:
             if numb.isdigit():
-                
+             return numb.isdigit()
 
             length = length -1
 
