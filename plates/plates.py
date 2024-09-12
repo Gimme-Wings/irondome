@@ -16,7 +16,6 @@ def is_valid(s):
 def letters(l, length):
     number_list = ("123456890")
     spaces = 1
-
     flag = False
         #i is the first digit
     for i in l:
@@ -31,6 +30,10 @@ def letters(l, length):
         if flag:
             break
     spaces = spaces %10
+    if spaces >= 3:
+        return True
+    elif (spaces <= 2) or (j == 0):
+        return False
 
 
 
