@@ -21,7 +21,7 @@ def letters(l, length):
         for i in l:
             for j in number_list:
                 if i == j:
-                    return 
+                    return False
 
                 else:
                     #spaces is where it is in the word
