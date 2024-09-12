@@ -10,8 +10,9 @@ def is_valid(s):
     length = len(s)
     if 2 <= length <= 6:
         return letters(s)
-    else:
-        return False
+            return punct(s)
+        else:
+            return False
 
 
 
@@ -38,5 +39,7 @@ def letters(l):
     else:
         return True
 
+def punct(pu):
+    
 
 main()
