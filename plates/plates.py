@@ -19,6 +19,7 @@ def letters(l, length):
         for i in number_list:
             first_number = l.find(number_list)
             length = length -1
+            break
     if first_number <= 2:
         return False
     else:
