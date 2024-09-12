@@ -9,7 +9,8 @@ def main():
 def is_valid(s):
     length = len(s)
     if 2 <= length <= 6:
-        return letters(s) and punct(s)
+        #return letters(s)
+        return punct(s)
 
 
     else:
@@ -42,7 +43,7 @@ def letters(l):
 
 def punct(pu):
     number_list = (".,/';:")
-    spaces = 12
+    spaces = 0
     flag = False
     # i is the first digit
     for i in pu:
