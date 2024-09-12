@@ -10,9 +10,9 @@ def is_valid(s):
     length = len(s)
     if 2 <= length <= 6:
         return letters(s)
-            return punct(s)
-        else:
-            return False
+        return punct(s)
+    else:
+        return False
 
 
 
@@ -40,7 +40,8 @@ def letters(l):
         return True
 
 def punct(pu):
-    number_list = (".,/';:!")
+    number_list = (".,/';:")
+    spaces = 12
     flag = False
     # i is the first digit
     for i in pu:
@@ -50,12 +51,13 @@ def punct(pu):
                 break
             else:
                 # spaces is where it is in the word
-                continue
+                spaces = spaces + 1
 
         if flag:
             break
+    spaces = spaces // 7
 
-    if (spaces < 2) or (j == '0'):
+    if (spaces < 6) or (j == '0'):
         return False
     else:
         return True
