@@ -30,8 +30,9 @@ def letters(l):
                 spaces = spaces + 1
         if flag:
             break
-        print(f"{spaces}")
-    spaces = spaces % 10
+    print(f"spaces:{spaces}")
+    spaces = spaces // 10
+    print(f'spaces2{spaces}')
     if spaces >= 3:
         return True
     elif (spaces <= 2) or (j == 0):
