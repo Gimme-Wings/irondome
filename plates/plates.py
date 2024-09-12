@@ -19,6 +19,8 @@ def letters(l, length):
         for i in l:
             for j in number_list:
                 first_number = l.find(number_list)
+                if first_number > 0:
+                    break
                 length = length -1
 
     if first_number <= 2:
