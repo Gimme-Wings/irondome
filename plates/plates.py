@@ -33,10 +33,11 @@ def letters(l):
     print(f"spaces:{spaces}")
     spaces = spaces // 10
     print(f'spaces2 {spaces}')
-    if spaces >= 2:
-        return True
-    elif (spaces <= 2) or (j == 0):
+
+    if (spaces < 2) or (j == 0):
         return False
+    else:
+        return True
 
 
 main()
