@@ -11,7 +11,7 @@ def is_valid(s):
     if 2 <= length <= 6:
         return letters(s)
 
-       
+
     else:
         return False
 
@@ -35,7 +35,7 @@ def letters(l):
             break
     spaces = spaces // 10
     print(spaces)
-    if (spaces < 2) or (j == '0'):
+    if (spaces < 1) or (j == '0'):
         return False
     else:
         return True
