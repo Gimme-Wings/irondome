@@ -11,8 +11,10 @@ def is_valid(s):
     if 2 <= length <= 6:
         if letters(s) == False:
             return False
-        elif:
-            return punct(s)
+        elif punct(s) == False:
+            return False
+        else:
+            return True
     else:
         return False
 
