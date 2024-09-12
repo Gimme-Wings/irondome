@@ -8,16 +8,17 @@ def main():
 
 def is_valid(s):
     length = len(s)
-    if 2<= length <=6:
+    if 2 <= length <= 6:
         letters(s, length)
     else:
         return False
+
 
 def letters(l, length):
     number_list = ("123456890")
     spaces = 1
     flag = False
-        #i is the first digit
+    # i is the first digit
     for i in l:
         for j in number_list:
             if i == j:
@@ -25,17 +26,15 @@ def letters(l, length):
                 break
 
             else:
-                    #spaces is where it is in the word
-                spaces = spaces +1
+                # spaces is where it is in the word
+                spaces = spaces + 1
         if flag:
             break
-    spaces = spaces %10
+    spaces = spaces % 10
     if spaces >= 3:
         return True
     elif (spaces <= 2) or (j == 0):
         return False
-
-
 
 
 main()
