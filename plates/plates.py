@@ -16,11 +16,10 @@ def is_valid(s):
 def letters(l, length):
     number_list = ("123456890")
     while length > 0:
-        for i in l:
-            for j in number_list:
-                first_number = l.find(number_list)
-                if first_number > 0:
-                    break
+        for numb in l:
+            if numb = 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 0:
+                    first_number = l.find(number_list)
+                
                 length = length -1
 
     if first_number <= 2:
