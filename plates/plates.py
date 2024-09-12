@@ -9,12 +9,12 @@ def main():
 def is_valid(s):
     length = len(s)
     if 2 <= length <= 6:
-        letters(s, length)
+        letters(s)
     else:
         return False
 
 
-def letters(l, length):
+def letters(l):
     number_list = ("123456890")
     spaces = 1
     flag = False
