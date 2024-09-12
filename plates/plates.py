@@ -16,7 +16,7 @@ def is_valid(s):
 
 def letters(l):
     number_list = ("123456890")
-    spaces = 1
+    spaces = 12
     flag = False
     # i is the first digit
     for i in l:
