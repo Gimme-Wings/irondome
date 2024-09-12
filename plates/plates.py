@@ -40,6 +40,25 @@ def letters(l):
         return True
 
 def punct(pu):
-    
+    number_list = (".,/';:!")
+    flag = False
+    # i is the first digit
+    for i in pu:
+        for j in number_list:
+            if i == j:
+                flag = True
+                break
+            else:
+                # spaces is where it is in the word
+                continue
+
+        if flag:
+            break
+
+    if (spaces < 2) or (j == '0'):
+        return False
+    else:
+        return True
+
 
 main()
