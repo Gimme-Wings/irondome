@@ -59,7 +59,7 @@ def punct(pu):
             break
     spaces = spaces // 7
 
-    if flag = True:
+    if flag:
         return False
     else:
         return True
