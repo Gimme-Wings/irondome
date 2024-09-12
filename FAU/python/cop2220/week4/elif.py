@@ -1,4 +1,4 @@
-number = 5
+number = int(input("number? "))
 if number > 0:
     print("greater than 0")
 elif number < 0:
