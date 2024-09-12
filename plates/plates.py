@@ -34,7 +34,7 @@ def letters(l):
     spaces = spaces // 10
     print(f'spaces2 {spaces}')
     print(j)
-    if (spaces < 2) or (j == 0):
+    if (spaces < 2) or (j == '0'):
         return False
     else:
         return True
