@@ -22,12 +22,12 @@ def letters(l, length):
             for j in number_list:
                 if i == j:
                     break
-
+                    
                 else:
                     #spaces is where it is in the word
                     spaces = spaces +1
         spaces = spaces %10
-    
+
 
 
 
