@@ -7,7 +7,9 @@ def main():
 
 
 def is_valid(s):
-    
+    letters(s)
 
+def letters(l):
+    
 
 main()
