@@ -10,12 +10,7 @@ def is_valid(s):
     letters(s)
 
 def letters(l):
-    plate_number = int(l[1:2])
-    numbers = 
-    for i in plate_number:
-        if numbers in l[1:2]:
-            return False
-        else:
-            return True
-
+    numbers = ['1','2','3','4','5','6','7','8','9','0']
+    first_number = l.find(numbers)
+    print(first_number)
 main()
