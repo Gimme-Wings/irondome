@@ -15,11 +15,9 @@ def is_valid(s):
 
 def letters(l, length):
     number_list = ("123456890")
-    while length > 0:
         for i in l:
             for j in number_list:
                 first_number = l.find(number_list)
-                length = length -1
 
     if first_number <= 2:
         return False
