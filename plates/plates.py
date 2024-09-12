@@ -24,7 +24,6 @@ def letters(l):
             if i == j:
                 flag = True
                 break
-
             else:
                 # spaces is where it is in the word
                 spaces = spaces + 1
