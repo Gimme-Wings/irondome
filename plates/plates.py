@@ -10,7 +10,6 @@ def is_valid(s):
     letters(s)
 
 def letters(l):
-    numbers = ['1','2','3','4','5','6','7','8','9','0']
-    first_number = l.find(numbers)
+    first_number = l.find('0' or '1')
     print(first_number)
 main()
