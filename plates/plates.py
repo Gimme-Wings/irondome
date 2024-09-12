@@ -16,7 +16,7 @@ def is_valid(s):
 
 def letters(l):
     number_list = ("123456890")
-    spaces = 12
+    spaces = 2
     flag = False
     # i is the first digit
     for i in l:
@@ -33,7 +33,7 @@ def letters(l):
     print(f"spaces:{spaces}")
     spaces = spaces // 10
     print(f'spaces2 {spaces}')
-    if spaces >= 3:
+    if spaces >= 2:
         return True
     elif (spaces <= 2) or (j == 0):
         return False
