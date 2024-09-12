@@ -10,8 +10,9 @@ def is_valid(s):
     letters(s)
 
 def letters(l):
-    numbers = list(l)
-    if numbers in l[1:2]:
+    for i in plate_number:
+        if i in numbers:
+            if numbers in l[1:2]:
         return False
     else:
         return True
