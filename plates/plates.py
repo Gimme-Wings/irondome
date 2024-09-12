@@ -9,12 +9,9 @@ def main():
 def is_valid(s):
     length = len(s)
     if 2 <= length <= 6:
-        if letters(s) == False:
-            return False
-        elif punct(s) == False:
-            return False
-        else:
-            return True
+        return letters(s)
+
+       
     else:
         return False
 
