@@ -9,7 +9,7 @@ def main():
 def is_valid(s):
     length = len(s)
     if 2 <= length <= 6:
-        letters(s)
+        return letters(s)
     else:
         return False
 
