@@ -14,10 +14,10 @@ def is_valid(s):
         return False
 
 def letters(l, length):
-    number_list = [ '1', '2', '3', '4', '5', '6', '7','8', '9','0']
+    number_list = ("123456890")
     while length > 0:
         for i in number_list:
-            first_number = number_list.find(l)
+            first_number = number_list.find()
             length = length -1
     if first_number <= 2:
         return False
