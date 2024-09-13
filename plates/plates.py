@@ -65,14 +65,14 @@ def punct(pu):
         return True
 
 def let_aft(k,length):
-    plusone = length+1
+
     diglet_list = []
     for i in k:
             if i.isdigit():
                 diglet_list.append('dig')
             else:
                 diglet_list.append('str')
-    for m in range(length):
+    for m in range(length-1):
         if (diglet_list[m] == 'dig') and (diglet_list[m+1] == 'str'):
             return False
     else:
