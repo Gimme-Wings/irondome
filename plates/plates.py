@@ -71,9 +71,8 @@ def let_aft(k, length):
                 diglet_list.append('dig')
             else:
                 diglet_list.append('str')
-    for m in diglet_list:
-        if m == dig:
     
+
 
 
 
