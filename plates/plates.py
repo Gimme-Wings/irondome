@@ -1,7 +1,7 @@
 def main():
     plate = input("Plate: ")
     if is_valid(plate):
-        print("Valid")
+        print("Valid", end ='')
     else:
         print("Invalid")
 
@@ -58,7 +58,7 @@ def punct(pu):
         if flag:
             break
     spaces = spaces // 7
-  
+
     if flag:
         return False
     else:
