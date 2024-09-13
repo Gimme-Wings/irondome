@@ -9,10 +9,8 @@ def main():
 def is_valid(s):
     length = len(s)
     if 2 <= length <= 6:
-        #return letters(s)
+        return letters(s)
         return punct(s)
-
-
     else:
         return False
 
@@ -35,7 +33,7 @@ def letters(l):
         if flag:
             break
     spaces = spaces // 10
-    print(spaces)
+    
     if (spaces < 1) or (j == '0'):
         return False
     else:
