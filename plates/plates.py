@@ -74,9 +74,9 @@ def let_aft(k,length):
                 diglet_list.append('str')
     for m in range(length):
         if (diglet_list[m] == 'dig') and (diglet_list[m+1] != 'str'):
-            return True
-        else:
             return False
+        else:
+            return True
 
 
 
