@@ -7,13 +7,13 @@ def main():
 
 
 def is_valid(s):
-    
+
     length = len(s)
     if 2 <= length <= 6:
-        return letters(s)
-        return punct()
-    else:
-        return False
+        if letters(s):
+            return punct(s)
+        else:
+            return False
 
 
 
