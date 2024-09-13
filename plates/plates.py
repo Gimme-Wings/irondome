@@ -11,7 +11,9 @@ def is_valid(s):
     length = len(s)
     if 2 <= length <= 6:
         if letters(s):
+            print("letters passes")
             if punct(s):
+                print("punct passed")
                 return let_aft(s,length)
             else:
                 return False
