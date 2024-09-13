@@ -65,7 +65,7 @@ def punct(pu):
         return True
 
 def let_aft(k,length):
-
+    plusone = length+1
     diglet_list = []
     for i in k:
             if i.isdigit():
@@ -75,8 +75,8 @@ def let_aft(k,length):
     for m in range(length):
         if (diglet_list[m] == 'dig') and (diglet_list[m+1] == 'str'):
             return False
-        else:
-            return True
+    else:
+        return True
 
 
 
