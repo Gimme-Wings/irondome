@@ -39,6 +39,7 @@ def letters(l):
     spaces = spaces // 10
 
     if (spaces < 1) or (j == '0'):
+        print("spaces or first number not passe")
         return False
     else:
         return True
