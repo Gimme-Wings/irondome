@@ -12,7 +12,7 @@ def is_valid(s):
     if 2 <= length <= 6:
         if letters(s):
             if punct(s):
-                return let_aft(s)
+                return let_aft(s,length)
             else:
                 return False
 
@@ -64,7 +64,7 @@ def punct(pu):
     else:
         return True
 
-def let_aft(k):
+def let_aft(k,length):
 
     diglet_list = []
     for i in k:
@@ -72,7 +72,7 @@ def let_aft(k):
                 diglet_list.append('dig')
             else:
                 diglet_list.append('str')
-    for m in range(6):
+    for m in range(length):
         if (diglet_list[m] == 'dig') and (diglet_list[m+1] != 'str'):
             return True
         else:
