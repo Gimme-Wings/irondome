@@ -11,9 +11,10 @@ def is_valid(s):
     length = len(s)
     if 2 <= length <= 6:
         if letters(s):
-            return punct(s)
-        else:
-            return False
+            if punct(s):
+                return let_aft(s)
+            else:
+                return False
 
 
 
@@ -62,6 +63,9 @@ def punct(pu):
         return False
     else:
         return True
+
+def let_aft(k):
+    
 
 
 main()
