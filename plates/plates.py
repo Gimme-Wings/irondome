@@ -65,11 +65,11 @@ def punct(pu):
         return True
 
 def let_aft(k, length):
-    numbers = "123456789"
-    print(type(numbers))
     for i in k:
-        for m in numbers:
-            l=1+1
+        if i.isdigit():
+            k[i] = "dig"
+        else:
+            k[i] = "str"
 
 
 
