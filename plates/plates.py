@@ -40,7 +40,10 @@ def letters(l):
     spaces = spaces // 10
     print(i)
     print(spaces)
-
+    if j == '0':
+        print(f"{j} bad")
+    if spaces < 1:
+        print(f"{spaces} is bad")
     if (spaces < 1) or (j == '0'):
         print("spaces or first number not passe")
         return False
