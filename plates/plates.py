@@ -33,10 +33,12 @@ def letters(l):
             else:
                 # spaces is where it is in the word
                 spaces = spaces + 1
+                print(spaces)
 
         if flag:
             break
     spaces = spaces // 10
+    print(spaces)
 
     if (spaces <= 1) or (j == '0'):
         print("spaces or first number not passe")
