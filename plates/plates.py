@@ -11,9 +11,7 @@ def is_valid(s):
     length = len(s)
     if 2 <= length <= 6:
         if letters(s):
-            print("letters passes")
             if punct(s):
-                print("punct passed")
                 return let_aft(s,length)
             else:
                 return False
@@ -33,19 +31,11 @@ def letters(l):
             else:
                 # spaces is where it is in the word
                 spaces = spaces + 1
-                print(spaces)
 
         if flag:
             break
     spaces = spaces // 10
-    print(i)
-    print(spaces)
-    if j == '0':
-        print(f"{j} bad")
-    if spaces < 1:
-        print(f"{spaces} is bad")
     if (spaces < 1) or (j == '0'):
-        print("spaces or first number not passe")
         return False
     else:
         return True
