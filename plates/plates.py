@@ -38,6 +38,7 @@ def letters(l):
         if flag:
             break
     spaces = spaces // 10
+    print(i)
     print(spaces)
 
     if (spaces < 1) or (j == '0'):
