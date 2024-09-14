@@ -21,7 +21,7 @@ def is_valid(s):
 
 
 def letters(l):
-    number_list = ("123456890")
+    number_list = ("012345689")
     spaces = 0
     flag = False
     # i is the first digit
