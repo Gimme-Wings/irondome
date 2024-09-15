@@ -6,3 +6,5 @@ if spam<5:
 while spam<5:
     print("roar")
     spam +=1
+else:
+    print("end of process")
