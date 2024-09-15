@@ -3,3 +3,7 @@ fruits = ['apple', 'bananas','cherry']
 
 for f in fruits:
     print(f)
+
+text = "hello"
+for char in text:
+    print(char)
