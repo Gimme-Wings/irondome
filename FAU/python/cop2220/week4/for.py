@@ -7,3 +7,5 @@ for f in fruits:
 text = "hello"
 for char in text:
     print(char)
+
+
