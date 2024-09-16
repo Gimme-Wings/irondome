@@ -6,7 +6,7 @@ else:
     print("not a leap year")
 
 
-birth_year = 1970
+birth_year = 1770
 leap_years_lived = 0
 reg_years_lived = 0
 for i in range(birth_year,2024):
