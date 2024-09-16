@@ -4,6 +4,8 @@ if (year % 4 == 0) and (year % 100 == 0 and year %400 != 0):
     print("leap")
 else:
     print("not a leap year")
+
+    
 birth_year = 1970
 leap_years_lived = 0
 reg_years_lived = 0
