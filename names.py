@@ -12,3 +12,5 @@ for name in name_list:
         for age in age_list:
             if age >=0 and age <= 12:
                 print(f"{name[num]} is a child")
+            elif age >=13 and age <=19:
+                print(f"{name[num]} is a teen")
