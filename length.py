@@ -13,7 +13,7 @@ box_content = box_length - title_space - 6 -4
 # how many extra spaces above the box length would have to be added
 if  (length_title - box_content) > 0:
     add_space = length_title - box_content +2
-    long_space = 4
+    long_space = 1
 
 else:
     add_space = 0
@@ -31,10 +31,10 @@ decor = char2*3
 char2_spacing = char2_spacing + long_space
 short_line = (box_side) + (" "*((box_length + add_space )- 4)) + (box_side)
 #for even title because the box length is even it will line up evenly in the center
-even_title_line = (box_side) + (" " * (char2_spacing)) + (decor)+ " "+(title) +" "+(decor) + (" " * (char2_spacing + long_space)) +(box_side)
+even_title_line = (box_side) + (" " * (char2_spacing)) + (" "* long_space) +(decor)+ " "+(title) +" "+(decor) + (" "* long_space) +(" " * (char2_spacing)) +(box_side)
 #in the case that the title is odd like the word title for example the right border will be off set by one white space due to
 #how the math for the spacing is calculated
-odd_title_line = (box_side) + (" " * (char2_spacing + 4)) + (decor)+ " "+(title) +" "+(decor) + (" " * (char2_spacing+1 +long_space)) +(box_side)
+odd_title_line = (box_side) + (" " * (char2_spacing)) + (" "* long_space) +(decor)+ " "+(title) +" "+(decor) + (" "* long_space) + (" " * (char2_spacing + 1)) +(box_side)
 
 
 #start print of long line
