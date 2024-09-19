@@ -1,3 +1,5 @@
-import range.py
+def greet(name):
+    name = input("name? ")
+    return name
 def main():
-    range()
+    print(greet(i))
