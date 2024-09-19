@@ -1,5 +1,5 @@
-def greet(name):
+def greet(i):
     name = input("name? ")
-    return name
-def main():
-    print(greet(i))
+    print(name)
+i = 0
+greet(i)
