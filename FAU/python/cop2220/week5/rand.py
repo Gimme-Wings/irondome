@@ -1,5 +1,5 @@
 def main():
-    for i in range(600):
+    for i in range(100):
         b = i
         is_prime(b)
         #print(true(b))
