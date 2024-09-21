@@ -1,3 +1,5 @@
 def test():
-    pass
-none = test
+    print(" ")
+a = test()
+print(a)
+
