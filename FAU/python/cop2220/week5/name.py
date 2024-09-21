@@ -1,4 +1,4 @@
-import module_name
+import multvalue
 
-a = multvalue.py
+a = multvalue
 print(a)
