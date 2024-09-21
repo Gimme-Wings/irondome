@@ -1,5 +1,5 @@
 def main():
-    for i in range(100):
+    for i in range(600):
         b = i
         is_prime(b)
         #print(true(b))
@@ -10,7 +10,7 @@ def is_prime(b):
         if (b%n ==0):
             fact = fact + 1
     if fact == 2:
-        print(f"{b} is prime")
+        print(b," ", end = "")
     else:
         pass
         #print(f"{b} is not prime")
