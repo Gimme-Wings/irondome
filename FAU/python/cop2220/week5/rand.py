@@ -1,8 +1,8 @@
 def main():
-    for i in range(1000):
+    for i in range(100000):
         b = i
         is_prime(b)
-
+        print(true(b))
 
 def is_prime(b):
     fact = 0
@@ -13,5 +13,14 @@ def is_prime(b):
         print(f"{b} is prime")
     else:
         print(f"{b} is not prime")
+def true(num):
+    factors = 0
+    result = False
+    for n in range(1, num+1):
+        if num%n == 0:
+            factors = factors +1
+    if factors<=2:
+        result = True
+    return result
 
 main()
