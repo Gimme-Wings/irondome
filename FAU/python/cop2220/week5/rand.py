@@ -1,11 +1,10 @@
 def main():
-    b = int(input())
-    a=prime(b)
-    if a >25:
-        pass
-    else:
-        print(a)
+    b = int(input("num"))
+    prime(b)
+
 
 def prime(b):
-    if b % b == 1 and b % 1 == b:
-        return b
+    for n in range (1,b+1):
+        print(n, n % 1)
+
+main()
