@@ -7,3 +7,4 @@ def test():
 
 a = test()
 print(type(a))
+
