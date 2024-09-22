@@ -36,7 +36,7 @@ def Valerr(value):
         else:
             return a
 def too_big(b):
-    print(f"{b} is b")
+    b = Valerr(b)
     while True:
         if b > 1:
             b = get_int()
