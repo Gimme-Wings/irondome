@@ -5,10 +5,12 @@ def main():
     get_perc(gauge)
 
 def get_perc(a):
-    if a == 1:
+    if a >= .99:
         print("F")
     elif a == .75:
         print("75%")
+    elif a == 2/3:
+        print("67%")
     elif a == .5:
         print("50%")
     elif a == .25:
