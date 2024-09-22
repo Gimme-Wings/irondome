@@ -31,7 +31,7 @@ def Valerr(value):
         try:
             a = value[0]/value[1]
         except (ValueError, ZeroDivisionError):
-            get_int()
+            value = get_int()
         else:
             return a
 main()
