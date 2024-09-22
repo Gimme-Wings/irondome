@@ -1,6 +1,7 @@
 def main():
     value = get_int()
-    Valerr(value)
+    level = Valerr(value)
+    
 
 def get_perc(a):
     if a == 1:
