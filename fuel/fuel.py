@@ -15,10 +15,12 @@ def get_perc(a):
         print("E")
 
 def get_int():
-    perc = input("Fraction: ")
-    x = perc.split("/")
-    x = int(x[0]), int(x[1])
-    return x
+    while True:
+        perc = input("Fraction: ")
+        x = perc.split("/")
+        
+        x = int(x[0]), int(x[1])
+        return x
 
 def ValueError(value):
     try:
