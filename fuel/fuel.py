@@ -38,7 +38,8 @@ def Valerr(value):
 def too_big(b):
     while True:
         if b > 1:
-            b = get_int()
+            c = get_int()
+            b = Valerr(c)
         else:
             return b
 
