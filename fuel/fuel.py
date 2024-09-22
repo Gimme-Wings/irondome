@@ -1,7 +1,7 @@
 def main():
     value = get_int()
-    tried(value)
-    
+    ValueError(value)
+
 def get_perc(a):
     if a == 1:
         print("100%")
@@ -13,13 +13,16 @@ def get_perc(a):
         print("25%")
     elif a <= .01:
         print("E")
+
 def get_int():
-    perc = int(input("Fraction: "))
-    return perc
+    perc = input("Fraction: ")
+    x = perc.split("/")
+    x = int(x[0]), int(x[1])
+    return x
 
 def ValueError(value):
     try:
-        a = value[0]/value[2]
+        a = value[0]/value[1]
     except ValueError:
         get_int()
     else:
