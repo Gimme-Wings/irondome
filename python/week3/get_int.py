@@ -7,7 +7,8 @@ def get_int():
         try:
             return int(input("whats x "))
         except ValueError:
-            print("x is not an int")
+            pass #just keep on going in the loop
+            #print("x is not an int")
         #else:
             #return x #this is equal to a break
 main()
