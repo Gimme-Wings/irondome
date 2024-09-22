@@ -18,9 +18,12 @@ def get_int():
     while True:
         perc = input("Fraction: ")
         x = perc.split("/")
-        
-        x = int(x[0]), int(x[1])
-        return x
+        try:
+            x = int(x[0]), int(x[1])
+        except ValueError:
+            pass
+        else:
+            return x
 
 def ValueError(value):
     try:
