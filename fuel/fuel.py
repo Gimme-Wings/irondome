@@ -1,8 +1,8 @@
 def main():
     value = get_int()
     level = Valerr(value)
-    level = too_big(level)
-    get_perc(level)
+    gauge = too_big(level)
+    get_perc(gauge)
 
 def get_perc(a):
     if a == 1:
@@ -36,5 +36,10 @@ def Valerr(value):
         else:
             return a
 def too_big(b):
-    print(b)
+    while True:
+        if b>1:
+            b = get_int()
+        else:
+            return b
+
 main()
