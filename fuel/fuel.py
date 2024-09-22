@@ -1,6 +1,7 @@
 def main():
     value = get_int()
     level = Valerr(value)
+    level = too_big(level)
     get_perc(level)
 
 def get_perc(a):
@@ -32,8 +33,8 @@ def Valerr(value):
             a = value[0]/value[1]
         except (ValueError, ZeroDivisionError):
             value = get_int()
-        elif a > 1:
-            value = get_int()
         else:
             return a
+def too_big(b):
+    print(b)
 main()
