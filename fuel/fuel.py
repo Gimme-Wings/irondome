@@ -34,7 +34,7 @@ def Valerr(value):
         except (ValueError, ZeroDivisionError):
             value = get_int()
         else:
-            return a
+            return float(a)
 def too_big(b):
     while True:
         if b > 1:
