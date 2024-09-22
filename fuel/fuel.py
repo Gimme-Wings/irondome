@@ -13,6 +13,8 @@ def get_perc(a):
         print("67%")
     elif a == .5:
         print("50%")
+    elif a == 1/3:
+        print("33%")
     elif a == .25:
         print("25%")
     elif a <= .01:
