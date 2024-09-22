@@ -36,6 +36,10 @@ def Valerr(value):
         else:
             return a
 def too_big(b):
+    try:
+        b = b[0]/b[1]
+    except(ValueError, ZeroDivisionError):
+        b = get_int()
     while True:
         if b > 1:
             b = get_int()
