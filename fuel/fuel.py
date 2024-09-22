@@ -1,6 +1,6 @@
 def main():
     value = get_int()
-    ValueError(value)
+    Valerr(value)
 
 def get_perc(a):
     if a == 1:
@@ -20,12 +20,12 @@ def get_int():
         x = perc.split("/")
         try:
             x = int(x[0]), int(x[1])
-        except ValueError:
+        except (ValueError, ValueError):
             pass
         else:
             return x
 
-def ValueError(value):
+def Valerr(value):
     try:
         a = value[0]/value[1]
     except ValueError:
