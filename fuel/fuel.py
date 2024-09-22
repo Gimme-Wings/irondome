@@ -1,7 +1,7 @@
 def main():
     value = get_int()
     level = Valerr(value)
-    
+    get_perc(level)
 
 def get_perc(a):
     if a == 1:
@@ -27,10 +27,11 @@ def get_int():
             return x
 
 def Valerr(value):
-    try:
-        a = value[0]/value[1]
-    except (ValueError, ZeroDivisionError):
-        get_int()
-    else:
-        get_perc(a)
+    while True:
+        try:
+            a = value[0]/value[1]
+        except (ValueError, ZeroDivisionError):
+            get_int()
+        else:
+            return a
 main()
