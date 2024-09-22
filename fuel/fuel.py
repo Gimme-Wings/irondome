@@ -4,7 +4,7 @@ def main():
 
 def get_perc(a):
     if a == 1:
-        print("100%")
+        print("F")
     elif a == .75:
         print("75%")
     elif a == .5:
@@ -28,7 +28,7 @@ def get_int():
 def Valerr(value):
     try:
         a = value[0]/value[1]
-    except ValueError:
+    except (ValueError, ZeroDivisionError):
         get_int()
     else:
         get_perc(a)
