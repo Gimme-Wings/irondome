@@ -5,9 +5,9 @@ def main():
 def get_int():
     while True:
         try:
-            x = int(input("whats x "))
+            return int(input("whats x "))
         except ValueError:
             print("x is not an int")
-        else:
-            return x #this is equal to a break
+        #else:
+            #return x #this is equal to a break
 main()
