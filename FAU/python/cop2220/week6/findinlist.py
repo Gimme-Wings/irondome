@@ -4,7 +4,8 @@ if 10.5 in list1:
 if "@" not in list1:
     print("9 not in it")
 cap = 0
-text = "I love napkins and noone can stop me"
-if ("o" in text):
-    cap = cap + 1
+text = "I lOve napkins and noone can stop me"
+for i in text:
+    if ("o" in i) or ("O" in i):
+        cap = cap + 1
 print(cap)
