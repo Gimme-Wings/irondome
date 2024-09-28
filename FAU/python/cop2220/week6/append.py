@@ -18,6 +18,7 @@ def get_number(n,my_list):
         if e == n:
             result.append(e)
     return result
+print(f"get_number(2,numbers))
 print(my_list)
 print(numbers)
 print(w)
