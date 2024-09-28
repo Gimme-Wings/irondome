@@ -7,6 +7,8 @@ print(f"{numbers} is the list")
 def get_element (n,numbers):
     result = []
     indexes = []
+#enumerate finds position of a thing when true
+#it creates a tuple
     for idx, e in enumerate(numbers):
         if e == n:
             result.append(e)
