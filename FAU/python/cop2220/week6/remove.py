@@ -3,7 +3,8 @@ my_list.remove(2)
 print(my_list)
 my_list.reverse()
 print(my_list)
-
-item = my_list.pop(3)
+#pop removes the one at the end
+#if specified it will remove the thing at that index
+item = my_list.pop(1)
 print(item)
 print(my_list)
