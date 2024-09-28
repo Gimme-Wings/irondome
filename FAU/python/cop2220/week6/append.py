@@ -18,8 +18,8 @@ def get_number(n,my_list):
         if e == n:
             result.append(e)
     return result
-print(f"get_number(2,numbers))
-print(my_list)
-print(numbers)
-print(w)
-print(r)
+print(f"{get_number(2,numbers)} is get_number")
+print(f"{my_list} is my list")
+print(f"{numbers} is numbers")
+print(f"{w} is position of 100")
+print(f"{r} is the amount of times 3 appears")
