@@ -6,3 +6,4 @@ print(my_list)
 
 item = my_list.pop(3)
 print(item)
+print(my_list)
