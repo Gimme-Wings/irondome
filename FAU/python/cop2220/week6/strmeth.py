@@ -1,3 +1,3 @@
 name = "QWert"
-name.upper()
+name = name.upper()
 print(name)
