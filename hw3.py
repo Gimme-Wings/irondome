@@ -5,7 +5,7 @@ def get_name():
     name_list = []
     for count,i in enumerate(range (3)):
         name = input(f"input name {count+1}: ")
-        name.title()
+        name = name.title()
         name_list.append(name)
     return name_list
 def get_age():
