@@ -70,6 +70,6 @@ def main():
     quiz = get_quiz_grades()
     exam = get_exam_grades()
     weight = weight_list()
-    print(lab,hw,quiz,exam,weight)
+    #print(lab,hw,quiz,exam,weight)
     compute_grade(lab,hw,quiz,exam,weight)
 main()
