@@ -2,7 +2,7 @@ def get_lab_grades():
     lab_list = []
     x = -1
     while x< 0:
-        x = int(input("how many labs will you be inputting"))
+        x = int(input("how many labs will you be inputting: "))
     for count in (range(x)):
         grade = -1
         while grade <= 0:
@@ -14,7 +14,7 @@ def get_hw_grades():
     hw_list = []
     x = -1
     while x< 0:
-        x = int(input("how many homeworks will you be inputting"))
+        x = int(input("how many homeworks will you be inputting: "))
     for count in (range(x)):
         grade = -1
         while grade <= 0:
@@ -26,7 +26,7 @@ def get_quiz_grades():
     quiz_list = []
     x = -1
     while x< 0:
-        x = int(input("how many quizzes will you be inputting"))
+        x = int(input("how many quizzes will you be inputting: "))
     for count in (range(x)):
         grade = -1
         while grade <= 0:
@@ -38,7 +38,7 @@ def get_exam_grades():
     exam_list = []
     x = -1
     while x< 0:
-        x = int(input("how many exams will you be inputting"))
+        x = int(input("how many exams will you be inputting: "))
     for count in (range(x)):
         grade = -1
         while grade <= 0:
@@ -55,7 +55,7 @@ def average(assignment,add):
     return average
 def compute_grade(lab,hw,quiz,exam,weight):
     weight_avg = 0
-    assignments_grade =
+    assignments_grade = [lab,hw,quiz,exam]
     for count,m in enumerate(assignments_grade):
         add = 0
         for i in m:
