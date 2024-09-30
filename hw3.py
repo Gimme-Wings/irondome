@@ -68,3 +68,32 @@ def main():
     oldest(name_list,age_list)
 
 main()
+
+
+def get_lab_grades():
+    lab_list = []
+    x = -1
+    while x<= 0:
+        x = int(input("how many labs will you be inputting"))
+    for count in (range(x)):
+        grade = -1
+        while grade <= 0:
+            grade = int(input(f"input grade {count+1}: "))
+        lab_list.append(grade)
+
+    return lab_list
+def get_hw_grades():
+    pass
+def get_quiz_grades():
+    pass
+def get_exam_grades():
+    pass
+def compute_grade():
+    pass
+def main():
+    lab = get_lab_grades()
+    hw = get_hw_grades()
+    quiz = get_quiz_grades()
+    exam = get_exam_grades()
+    compute_grade()
+main()
