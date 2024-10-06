@@ -6,5 +6,3 @@ scores = [row0,row1,row2]
 print(scores)
 
 print(scores [1][1])
-x =scores.index('chris')
-print(x)
