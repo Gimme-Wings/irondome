@@ -2,5 +2,6 @@
     "gitdoc.enabled": true,
     "window.autoDetectColorScheme": true,
     "workbench.preferredHighContrastLightColorTheme": "Default Dark+",
-    "workbench.preferredLightColorTheme": "Default Dark+"
+    "workbench.preferredLightColorTheme": "Default Dark+",
+    "python.analysis.autoImportCompletions": false
 }
