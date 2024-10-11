@@ -106,63 +106,78 @@ def e_cities():
     e_city = {
         "Sderot":{
             "lower" : 1.9,
-            "upper" : 4.5
+            "upper" : 4.5,
+            "time" : 15
         },
         "Ibim":{
             "lower":4.6,
-            "upper":5.0
+            "upper":5.0,
+            "time" :15
         },
         "Bror Hayil":{
             "lower":7.45,
-            "upper": 8.35
+            "upper": 8.35,
+            "time" : 30
         },
         "Tlamim":{
             "lower": 9.88,
-            "upper": 11.05
+            "upper": 11.05,
+            "time" :30
         },
         "Sde David":{
             "lower": 11.31,
-            "upper": 12.36
+            "upper": 12.36,
+            "time" : 30
         },
         "Kiryat Gat":{
             "lower": 18.93,
-            "upper": 21.81
+            "upper": 21.81,
+            "time" : 45
         },
         "Bet Shemsh 3":{
             "lower": 43.05,
-            "upper": 44.7
+            "upper": 44.7,
+            "time" : 90
         },
         "Bet Shemesh 1":{
             "lower": 44.7,
-            "upper": 45.86
+            "upper": 45.86,
+            "time" : 90
         },
         "Beitar Illit":{
             "lower": 53.69,
-            "upper": 56.35
+            "upper": 56.35,
+            "time" : 90
         },
         "Ora":{
             "lower": 59.25,
-            "upper": 61.58
+            "upper": 61.58,
+            "time" : 90
         },
         "Western Jerusalem/Bait Vagan":{
             "lower": 61.6,
-            "upper": 65.15
+            "upper": 65.15,
+            "time" : 90
         },
         "Givat Ram/Central Jerusalem":{
             "lower": 65.15,
-            "upper": 66.5
+            "upper": 66.5,
+            "time" : 90
         },
         "Rehavia":{
             "lower": 66.5,
-            "upper": 68.05
+            "upper": 68.05,
+            "time" : 90
         },
         "Old City":{
             "lower": 68.05,
-            "upper": 69.34
+            "upper": 69.34,
+            "time" : 90
         },
         "Ma'ale Adumin":{
             "lower": 73.72,
-            "upper": 76.3
+            "upper": 76.3,
+            "time" : 90
         }
 
     }
@@ -172,39 +187,48 @@ def n_cities ():
     n_city = {
         "Netiv HaAsara":{
             "lower":.7,
-            "upper": 1.9
+            "upper": 1.9,
+            "time" : 15
         },
         "Zikim":{
             "lower" : 15.8,
-            "upper" : 16.6
+            "upper" : 16.6,
+            "time" : 15
         },
         "Ashkelon":{
             "lower" : 18.5,
-            "upper" : 25.33
+            "upper" : 25.33,
+            "time" : 30
         },
         "Ashdod":{
             "lower" : 23.22,
-            "upper" : 28.95
+            "upper" : 28.95,
+            "time" : 45
         },
         "Port Ashdod":{
             "lower": 29,
-            "upper": 32.65
+            "upper": 32.65,
+            "time" : 45
         },
         "Rishon Letzion":{
             "lower": 48.84,
-            "upper": 52.44
+            "upper": 52.44,
+            "time" : 90
         },
         "Bat Yam":{
             "lower": 52.45,
-            "upper": 57
+            "upper": 57,
+            "time" : 90
         },
         "Jaffa":{
             "lower":57,
-            "upper":64
+            "upper":64,
+            "time" : 90
         },
         "Tel Aviv":{
             "lower":64,
-            "upper":73.4
+            "upper":73.4,
+            "time" : 90
         }
     }
     return n_city
@@ -220,7 +244,7 @@ def alarm(city,land_point,launch_number):
     global counter 
     for city,bounds in city.items():
         if bounds["lower"] < land_point < bounds["upper"]:
-           text = f"!!!missile {launch_number+1}: alarm raised in the city of {city}!!!"
+           text = f"!!!missile {launch_number+1}: alarm in {city}, you have {bounds['time']} seconds to shelter!!!"
            alarm_cities+= text + "\n"
            alarm_cities_list.append(city)
            counter = counter + 1
