@@ -1,5 +1,6 @@
 import random as rd
 import math
+import numpy as np
 #!!!!! create a timer to how much time each city has!
 #!!different types of missiles!
 #map pictures with alarms
@@ -21,8 +22,8 @@ def eastern_launch(e_launches):
     alarm_text = ''
     city_list = []
     for launch in range(e_launches):
-        both_points,launch_point = missile_fire()
-        land_point,bool = detect(both_points,launch,launch_point)
+        three_points = missile_fire()
+        land_point,bool = detect(three_points,launch)
         e_city = e_cities()
         if bool == True:
             text,counter,cities_list_alarmed = alarm(e_city,land_point,launch)
@@ -42,8 +43,8 @@ def northern_launch(n_launches):
     city_list2 = []
     global counter2
     for launch in range(n_launches):
-        both_points,launch_point = missile_fire()
-        land_point,bool = detect(both_points,launch,launch_point)
+        three_points = missile_fire()
+        land_point,bool = detect(three_points,launch)
         n_city = n_cities()
         if bool == True:
             text2,counter2,cities_alarm_list2 = alarm(n_city,land_point,launch)
@@ -58,35 +59,43 @@ def northern_launch(n_launches):
     except UnboundLocalError:
         return alarm_text2,0, city_list2
     
-def missile_fire():
+def missile_fire():#if possible split this into a separate function and call it radar
     launch_point = rd.uniform(0.0, 10.0)  # Generate random number
     launch_point_round = round(launch_point,1) # Print the rounded number
+    neg_root = -1*launch_point_round
     a = -0.1
-    b = rd.uniform(.01,8.8)#b = rd.randint(0,6)
+    b = rd.uniform(.1,8.8)#b = rd.randint(0,6)
     b = round(b,2)
-    point1_x = ((-1*b)/(2*a))
-    point1_y = a*(point1_x*point1_x) + b*point1_x
+    #pos_root = (b*10)-launch_point_round# b is times ten because if its .5 it will fly for 5 km
+    point1_x = neg_root + .25 #flight_dist = pos_root - (neg_root)
+    point1_y = (a*((point1_x-neg_root)*(point1_x-neg_root))) + b*(point1_x-neg_root)
     xy_list1 = [point1_x,point1_y]
-    xy_list2 = [0,0]
-    both_points = [xy_list1,xy_list2]
-    
-    return both_points,launch_point_round
+    point2_x = neg_root + .5
+    point2_y = (a*((point2_x-neg_root)*(point2_x-neg_root))) + b*(point2_x-neg_root)
+    xy_list2 = [point2_x,point2_y]
+    point3_x = neg_root + .4
+    point3_y = (a*((point3_x-neg_root)*(point3_x-neg_root))) + b*(point3_x-neg_root)
+    xy_list3 = [point3_x,point3_y]
+    three_points = [xy_list1,xy_list2,xy_list3]
+    return three_points
 
-def detect(both_points,launch_number,launch_point):
-    c = 0
-    x1,x2 = both_points[0][0],both_points[1][0]
-    y1,y2 = both_points[0][1],both_points[1][1]
-    a = (y2 - y1) / (x2**2 - x1**2)
+def detect(three_points,launch_number):#erase land_point and just find negative root and thats the launch point
+    x1,y1 = three_points[0][0],three_points[0][1]
+    x2,y2 = three_points[1][0],three_points[1][1]
+    x3,y3 = three_points[2][0],three_points[2][1]
+    A = np.array([[x1**2,x1,1],
+                  [x2**2,x2,1],
+                  [x3**2,x3,1]])
+    B= np.array([y1,y2,y3])
+    a,b,c = np.linalg.solve(A,B)
     a = round(a,2)
-    a = a*-1
-    b = (y1 - a * x1**2) / x1
     b = round(b,2)
     disc = (b**2) - (4*a*c)
-    pos_root = (-b -math.sqrt(disc))/(2*a)
+    pos_root = (-b - math.sqrt(disc))/(2*a)
+    neg_root = (-b + math.sqrt(disc))/(2*a)
     pos_root = round(pos_root,2)
-    flight_dist = pos_root
-    launch_point_round = launch_point
-    land_point = flight_dist-launch_point_round
+    neg_root = round(neg_root,2)
+    land_point = pos_root+neg_root#change this here and work out if its correct us neg root
     print(f"missile {launch_number+1}: lands {land_point:.1f} km outside gaza")
     if land_point>0:
         return land_point,True
