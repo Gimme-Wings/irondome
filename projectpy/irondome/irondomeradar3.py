@@ -1,7 +1,6 @@
 import random as rd
 import math
 import numpy as np
-#!!!!! create a timer to how much time each city has!
 #!!different types of missiles!
 #map pictures with alarms
 #if launch distance is within a certain range, print where its being launched from and where to
