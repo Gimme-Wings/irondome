@@ -1,7 +1,7 @@
 import random as rd
 import math
 import numpy as np
-#!!!!! create a timer to how much time each city has!
+import time
 #!!different types of missiles!
 #map pictures with alarms
 #if launch distance is within a certain range, print where its being launched from and where to
@@ -9,63 +9,106 @@ import numpy as np
 counter = 0
 counter2 = 0
 #y = a(x-x0)^2
-def east_input():
-    launches = int(input("how many missiles would you like to launch east? "))
+def east_input_short():
+    launches = int(input("how many missiles would you like to launch east(short range)? "))
     return launches
+def east_input_medium():
+    launches = int(input("how many missiles would you like to launch east(medium range)? "))
+    return launches
+def east_input_long():
+    launches = int(input("how many missiles would you like to launch east(long range)? "))
+    direction = "e"
+    return launches,direction
 
-def north_input():
-    launches = int(input("how many missiles would you like to launch north? "))
+def north_input_short():
+    launches = int(input("how many missiles would you like to launch north(short range)? "))
+    return launches
+def north_input_medium():
+    launches = int(input("how many missiles would you like to launch north(medium range)? "))
+    return launches
+def north_input_long():
+    launches = int(input("how many missiles would you like to launch north(long range)? "))
+    direction = "n"
     print_space()
-    return launches
+    return launches,direction
 
-def eastern_launch(e_launches):
+def eastern_launch(e_launches_short,e_launches_medium,e_launches_long,dir):
     alarm_text = ''
     city_list = []
-    for launch in range(e_launches):
-        three_points = missile_fire()
-        land_point,bool = detect(three_points,launch)
-        e_city = e_cities()
-        if bool == True:
-            text,counter,cities_list_alarmed = alarm(e_city,land_point,launch)
-            alarm_text += text 
-            if len(cities_list_alarmed)>0:
-                city_list.append(cities_list_alarmed)
-        else:
+    launch_dict = {e_launches_short:"short",
+                   e_launches_medium:"medium",
+                   e_launches_long:"long"}
+    for num_launches, dist_label in launch_dict.items():
+        if num_launches == 0:
             continue
-    print_space()
+        for launch in range(num_launches):
+            three_points = missile_fire(dist_label,dir)
+            land_point,bool = detect(three_points,launch)
+            e_city = e_cities()
+            if bool == True:
+                text,counter,cities_list_alarmed = alarm(e_city,land_point,launch,dist_label)
+                alarm_text += text 
+                if len(cities_list_alarmed)>0:
+                    city_list.append(cities_list_alarmed)
+            else:
+                continue
+        print_space()
     try:
         return alarm_text, counter,city_list
     except UnboundLocalError:
         return alarm_text,0,city_list
     
-def northern_launch(n_launches):
+def northern_launch(n_launches_short,n_launches_medium,n_launches_long,dir):
     alarm_text2 = ''
     city_list2 = []
     global counter2
-    for launch in range(n_launches):
-        three_points = missile_fire()
-        land_point,bool = detect(three_points,launch)
-        n_city = n_cities()
-        if bool == True:
-            text2,counter2,cities_alarm_list2 = alarm(n_city,land_point,launch)
-            alarm_text2 += text2
-            if len(cities_alarm_list2)>0:
-                city_list2.append(cities_alarm_list2)
-        else:
+    launch_dict = {n_launches_short:"short",
+                   n_launches_medium:"medium",
+                   n_launches_long:"long"}
+    for num_launch,dist_label in launch_dict.items():
+        if num_launch == 0:
             continue
-    print_space()
+        for launch in range(num_launch):
+            three_points = missile_fire(dist_label,dir)
+            land_point,bool = detect(three_points,launch)
+            n_city = n_cities()
+            if bool == True:
+                text2,counter2,cities_alarm_list2 = alarm(n_city,land_point,launch,dist_label)
+                alarm_text2 += text2
+                if len(cities_alarm_list2)>0:
+                    city_list2.append(cities_alarm_list2)
+            else:
+                continue
+        print_space()
     try:
         return alarm_text2, counter2,city_list2
     except UnboundLocalError:
         return alarm_text2,0, city_list2
     
-def missile_fire():#if possible split this into a separate function and call it radar
-    launch_point = rd.uniform(0.0, 10.0)  # Generate random number
-    launch_point_round = round(launch_point,1) # Print the rounded number
-    neg_root = -1*launch_point_round
+def missile_fire(dist,dir):#if possible split this into a separate function and call it radar
+    if dist == "short":
+        lower = 0.1
+        upper = 3.0
+    elif dist == "medium":
+        lower = 3.0
+        upper = 6.0
+    elif dist == "long":
+        lower = 6.0
+        upper = 8.8
+    
+    if dir == "n":
+        launch_point = rd.uniform(0,10.0)  # Generate random number
+        launch_point_round = round(launch_point,1) 
+       # launch_point_z = 0.0# Print the rounded number
+        neg_root = -1*launch_point_round
+    elif dir == "e":
+        launch_point = rd.uniform(0,7.0)  # Generate random number(0,7.0)
+        launch_point_round = round(launch_point,1) # Print the rounded number
+        neg_root = -1*launch_point_round
     a = -0.1
-    b = rd.uniform(.1,8.8)#b = rd.randint(0,6)
+    b = rd.uniform(lower,upper)#b = rd.randint(0,6)
     b = round(b,2)
+    #theta = rd.randint(30,90)
     #pos_root = (b*10)-launch_point_round# b is times ten because if its .5 it will fly for 5 km
     point1_x = neg_root + .25 #flight_dist = pos_root - (neg_root)
     point1_y = (a*((point1_x-neg_root)*(point1_x-neg_root))) + b*(point1_x-neg_root)
@@ -115,7 +158,7 @@ def e_cities():
             "time" :15
         },
         "Bror Hayil":{
-            "lower":7.45,
+            "lower": 7.45,
             "upper": 8.35,
             "time" : 30
         },
@@ -237,14 +280,20 @@ def list_creator(alarm_text,alarm_text2,counter,counter2):
     counters = [counter,counter2]
     text = [alarm_text,alarm_text2]
     return text,counters
+def story():
+    print("")
+    print("Its a quiet day in central israel")
+    print("noone is excpecting anything but the usual...")
+    print()
+    time.sleep(5)
 
-def alarm(city,land_point,launch_number):
+def alarm(city,land_point,launch_number,dist_label):
     alarm_cities = ''
     alarm_cities_list = []
     global counter 
     for city,bounds in city.items():
         if bounds["lower"] < land_point < bounds["upper"]:
-           text = f"!!!missile {launch_number+1}: alarm in {city}, you have {bounds['time']} seconds to shelter!!!"
+           text = f"!!!missile {launch_number+1} {dist_label}: alarm in {city}, you have {bounds['time']} seconds to shelter!!!"
            alarm_cities+= text + "\n"
            alarm_cities_list.append(city)
            counter = counter + 1
@@ -281,16 +330,21 @@ def print_space():
 def main():
     alarm_text = ''
     alarm_text2 = ''
-    e_launches = east_input()#launches = rd.randint(1,5)
-    n_launches = north_input()
-    print(f"{e_launches+n_launches} missiles have been fired total")
+    e_launches_short = east_input_short()#launches = rd.randint(1,5)
+    e_launches_medium = east_input_medium()#launches = rd.randint(1,5)
+    e_launches_long,dir_e = east_input_long()#launches = rd.randint(1,5)
+    n_launches_short = north_input_short()#launches = rd.randint(1,5)
+    n_launches_medium = north_input_medium()#launches = rd.randint(1,5)
+    n_launches_long,dir_n = north_input_long()#launches = rd.randint(1,5)
+    print(f"{e_launches_short+e_launches_medium+e_launches_long+n_launches_short+n_launches_medium+n_launches_long} missiles have been fired total")
     print_space()
 
-    alarm_text,counter,cities_alarm_list = eastern_launch(e_launches)
-    alarm_text2,counter2,cities_alarm_list2 = northern_launch(n_launches)
+    alarm_text,counter,cities_alarm_list = eastern_launch(e_launches_short,e_launches_medium,e_launches_long,dir_e)
+    alarm_text2,counter2,cities_alarm_list2 = northern_launch(n_launches_short,n_launches_medium,n_launches_long,dir_n)
     
     text, counters = list_creator(alarm_text,alarm_text2,counter,counter2)
     correct_alarm_counter(counters)
+    story()
     for enum,count_num in enumerate(counters):
         alarm_or_safe(count_num,text[enum])
         print(f"{count_num} alarms have been raised")
