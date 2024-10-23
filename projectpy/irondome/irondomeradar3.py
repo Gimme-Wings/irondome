@@ -1,7 +1,10 @@
 import random as rd
 import math
 import numpy as np
+<<<<<<< HEAD
 import time
+=======
+>>>>>>> ee66a2493d2bcdfb14068d55e60cc39a4739fb64
 #!!different types of missiles!
 #map pictures with alarms
 #if launch distance is within a certain range, print where its being launched from and where to
