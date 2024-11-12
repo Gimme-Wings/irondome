@@ -1,10 +1,8 @@
 import random as rd
 import math
 import numpy as np
-<<<<<<< HEAD
 import time
-=======
->>>>>>> ee66a2493d2bcdfb14068d55e60cc39a4739fb64
+
 #!!different types of missiles!
 #map pictures with alarms
 #if launch distance is within a certain range, print where its being launched from and where to
@@ -347,7 +345,8 @@ def main():
     
     text, counters = list_creator(alarm_text,alarm_text2,counter,counter2)
     correct_alarm_counter(counters)
-    story()
+    story()                                              
+                                                  
     for enum,count_num in enumerate(counters):
         alarm_or_safe(count_num,text[enum])
         print(f"{count_num} alarms have been raised")
